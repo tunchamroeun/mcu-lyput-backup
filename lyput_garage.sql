@@ -17,14 +17,14 @@ SET client_min_messages = warning;
 SET row_security = off;
 
 --
--- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: -
 --
 
 CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
 
 
 --
--- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: -
 --
 
 COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
@@ -35,7 +35,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: brands; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: brands; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.brands (
@@ -46,10 +46,8 @@ CREATE TABLE public.brands (
 );
 
 
-ALTER TABLE public.brands OWNER TO cloudware;
-
 --
--- Name: brands_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: brands_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.brands_id_seq
@@ -60,17 +58,15 @@ CREATE SEQUENCE public.brands_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.brands_id_seq OWNER TO cloudware;
-
 --
--- Name: brands_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: brands_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.brands_id_seq OWNED BY public.brands.id;
 
 
 --
--- Name: categories; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: categories; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.categories (
@@ -81,10 +77,8 @@ CREATE TABLE public.categories (
 );
 
 
-ALTER TABLE public.categories OWNER TO cloudware;
-
 --
--- Name: categories_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: categories_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.categories_id_seq
@@ -95,17 +89,15 @@ CREATE SEQUENCE public.categories_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.categories_id_seq OWNER TO cloudware;
-
 --
--- Name: categories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: categories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.categories_id_seq OWNED BY public.categories.id;
 
 
 --
--- Name: customers; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: customers; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.customers (
@@ -120,10 +112,8 @@ CREATE TABLE public.customers (
 );
 
 
-ALTER TABLE public.customers OWNER TO cloudware;
-
 --
--- Name: customers_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: customers_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.customers_id_seq
@@ -134,17 +124,15 @@ CREATE SEQUENCE public.customers_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.customers_id_seq OWNER TO cloudware;
-
 --
--- Name: customers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: customers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.customers_id_seq OWNED BY public.customers.id;
 
 
 --
--- Name: employees; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: employees; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.employees (
@@ -162,10 +150,8 @@ CREATE TABLE public.employees (
 );
 
 
-ALTER TABLE public.employees OWNER TO cloudware;
-
 --
--- Name: employees_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: employees_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.employees_id_seq
@@ -176,17 +162,15 @@ CREATE SEQUENCE public.employees_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.employees_id_seq OWNER TO cloudware;
-
 --
--- Name: employees_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: employees_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.employees_id_seq OWNED BY public.employees.id;
 
 
 --
--- Name: expense_details; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: expense_details; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.expense_details (
@@ -200,10 +184,8 @@ CREATE TABLE public.expense_details (
 );
 
 
-ALTER TABLE public.expense_details OWNER TO cloudware;
-
 --
--- Name: expense_details_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: expense_details_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.expense_details_id_seq
@@ -214,17 +196,15 @@ CREATE SEQUENCE public.expense_details_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.expense_details_id_seq OWNER TO cloudware;
-
 --
--- Name: expense_details_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: expense_details_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.expense_details_id_seq OWNED BY public.expense_details.id;
 
 
 --
--- Name: expense_types; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: expense_types; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.expense_types (
@@ -235,10 +215,8 @@ CREATE TABLE public.expense_types (
 );
 
 
-ALTER TABLE public.expense_types OWNER TO cloudware;
-
 --
--- Name: expense_types_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: expense_types_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.expense_types_id_seq
@@ -249,17 +227,15 @@ CREATE SEQUENCE public.expense_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.expense_types_id_seq OWNER TO cloudware;
-
 --
--- Name: expense_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: expense_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.expense_types_id_seq OWNED BY public.expense_types.id;
 
 
 --
--- Name: expenses; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: expenses; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.expenses (
@@ -271,10 +247,8 @@ CREATE TABLE public.expenses (
 );
 
 
-ALTER TABLE public.expenses OWNER TO cloudware;
-
 --
--- Name: expenses_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: expenses_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.expenses_id_seq
@@ -285,17 +259,15 @@ CREATE SEQUENCE public.expenses_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.expenses_id_seq OWNER TO cloudware;
-
 --
--- Name: expenses_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: expenses_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.expenses_id_seq OWNED BY public.expenses.id;
 
 
 --
--- Name: failed_jobs; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: failed_jobs; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.failed_jobs (
@@ -308,10 +280,8 @@ CREATE TABLE public.failed_jobs (
 );
 
 
-ALTER TABLE public.failed_jobs OWNER TO cloudware;
-
 --
--- Name: failed_jobs_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: failed_jobs_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.failed_jobs_id_seq
@@ -322,17 +292,15 @@ CREATE SEQUENCE public.failed_jobs_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.failed_jobs_id_seq OWNER TO cloudware;
-
 --
--- Name: failed_jobs_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: failed_jobs_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.failed_jobs_id_seq OWNED BY public.failed_jobs.id;
 
 
 --
--- Name: income_details; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: income_details; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.income_details (
@@ -346,10 +314,8 @@ CREATE TABLE public.income_details (
 );
 
 
-ALTER TABLE public.income_details OWNER TO cloudware;
-
 --
--- Name: income_details_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: income_details_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.income_details_id_seq
@@ -360,17 +326,15 @@ CREATE SEQUENCE public.income_details_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.income_details_id_seq OWNER TO cloudware;
-
 --
--- Name: income_details_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: income_details_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.income_details_id_seq OWNED BY public.income_details.id;
 
 
 --
--- Name: income_types; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: income_types; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.income_types (
@@ -381,10 +345,8 @@ CREATE TABLE public.income_types (
 );
 
 
-ALTER TABLE public.income_types OWNER TO cloudware;
-
 --
--- Name: income_types_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: income_types_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.income_types_id_seq
@@ -395,17 +357,15 @@ CREATE SEQUENCE public.income_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.income_types_id_seq OWNER TO cloudware;
-
 --
--- Name: income_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: income_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.income_types_id_seq OWNED BY public.income_types.id;
 
 
 --
--- Name: incomes; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: incomes; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.incomes (
@@ -417,10 +377,8 @@ CREATE TABLE public.incomes (
 );
 
 
-ALTER TABLE public.incomes OWNER TO cloudware;
-
 --
--- Name: incomes_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: incomes_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.incomes_id_seq
@@ -431,17 +389,15 @@ CREATE SEQUENCE public.incomes_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.incomes_id_seq OWNER TO cloudware;
-
 --
--- Name: incomes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: incomes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.incomes_id_seq OWNED BY public.incomes.id;
 
 
 --
--- Name: investments; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: investments; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.investments (
@@ -454,10 +410,8 @@ CREATE TABLE public.investments (
 );
 
 
-ALTER TABLE public.investments OWNER TO cloudware;
-
 --
--- Name: investments_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: investments_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.investments_id_seq
@@ -468,17 +422,15 @@ CREATE SEQUENCE public.investments_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.investments_id_seq OWNER TO cloudware;
-
 --
--- Name: investments_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: investments_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.investments_id_seq OWNED BY public.investments.id;
 
 
 --
--- Name: invoice_details; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: invoice_details; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.invoice_details (
@@ -498,10 +450,8 @@ CREATE TABLE public.invoice_details (
 );
 
 
-ALTER TABLE public.invoice_details OWNER TO cloudware;
-
 --
--- Name: invoice_details_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: invoice_details_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.invoice_details_id_seq
@@ -512,17 +462,15 @@ CREATE SEQUENCE public.invoice_details_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.invoice_details_id_seq OWNER TO cloudware;
-
 --
--- Name: invoice_details_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: invoice_details_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.invoice_details_id_seq OWNED BY public.invoice_details.id;
 
 
 --
--- Name: invoices; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: invoices; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.invoices (
@@ -543,10 +491,8 @@ CREATE TABLE public.invoices (
 );
 
 
-ALTER TABLE public.invoices OWNER TO cloudware;
-
 --
--- Name: invoices_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: invoices_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.invoices_id_seq
@@ -557,17 +503,15 @@ CREATE SEQUENCE public.invoices_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.invoices_id_seq OWNER TO cloudware;
-
 --
--- Name: invoices_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: invoices_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.invoices_id_seq OWNED BY public.invoices.id;
 
 
 --
--- Name: migrations; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: migrations; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.migrations (
@@ -577,10 +521,8 @@ CREATE TABLE public.migrations (
 );
 
 
-ALTER TABLE public.migrations OWNER TO cloudware;
-
 --
--- Name: migrations_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: migrations_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.migrations_id_seq
@@ -591,17 +533,15 @@ CREATE SEQUENCE public.migrations_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.migrations_id_seq OWNER TO cloudware;
-
 --
--- Name: migrations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: migrations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.migrations_id_seq OWNED BY public.migrations.id;
 
 
 --
--- Name: oauth_access_tokens; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: oauth_access_tokens; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.oauth_access_tokens (
@@ -617,10 +557,8 @@ CREATE TABLE public.oauth_access_tokens (
 );
 
 
-ALTER TABLE public.oauth_access_tokens OWNER TO cloudware;
-
 --
--- Name: oauth_auth_codes; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: oauth_auth_codes; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.oauth_auth_codes (
@@ -633,10 +571,8 @@ CREATE TABLE public.oauth_auth_codes (
 );
 
 
-ALTER TABLE public.oauth_auth_codes OWNER TO cloudware;
-
 --
--- Name: oauth_clients; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: oauth_clients; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.oauth_clients (
@@ -653,10 +589,8 @@ CREATE TABLE public.oauth_clients (
 );
 
 
-ALTER TABLE public.oauth_clients OWNER TO cloudware;
-
 --
--- Name: oauth_clients_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: oauth_clients_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.oauth_clients_id_seq
@@ -667,17 +601,15 @@ CREATE SEQUENCE public.oauth_clients_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.oauth_clients_id_seq OWNER TO cloudware;
-
 --
--- Name: oauth_clients_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: oauth_clients_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.oauth_clients_id_seq OWNED BY public.oauth_clients.id;
 
 
 --
--- Name: oauth_personal_access_clients; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: oauth_personal_access_clients; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.oauth_personal_access_clients (
@@ -688,10 +620,8 @@ CREATE TABLE public.oauth_personal_access_clients (
 );
 
 
-ALTER TABLE public.oauth_personal_access_clients OWNER TO cloudware;
-
 --
--- Name: oauth_personal_access_clients_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: oauth_personal_access_clients_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.oauth_personal_access_clients_id_seq
@@ -702,17 +632,15 @@ CREATE SEQUENCE public.oauth_personal_access_clients_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.oauth_personal_access_clients_id_seq OWNER TO cloudware;
-
 --
--- Name: oauth_personal_access_clients_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: oauth_personal_access_clients_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.oauth_personal_access_clients_id_seq OWNED BY public.oauth_personal_access_clients.id;
 
 
 --
--- Name: oauth_refresh_tokens; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: oauth_refresh_tokens; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.oauth_refresh_tokens (
@@ -723,10 +651,8 @@ CREATE TABLE public.oauth_refresh_tokens (
 );
 
 
-ALTER TABLE public.oauth_refresh_tokens OWNER TO cloudware;
-
 --
--- Name: password_resets; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: password_resets; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.password_resets (
@@ -736,10 +662,8 @@ CREATE TABLE public.password_resets (
 );
 
 
-ALTER TABLE public.password_resets OWNER TO cloudware;
-
 --
--- Name: pay_roll_details; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: pay_roll_details; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.pay_roll_details (
@@ -753,10 +677,8 @@ CREATE TABLE public.pay_roll_details (
 );
 
 
-ALTER TABLE public.pay_roll_details OWNER TO cloudware;
-
 --
--- Name: pay_roll_details_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: pay_roll_details_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.pay_roll_details_id_seq
@@ -767,17 +689,15 @@ CREATE SEQUENCE public.pay_roll_details_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.pay_roll_details_id_seq OWNER TO cloudware;
-
 --
--- Name: pay_roll_details_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: pay_roll_details_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.pay_roll_details_id_seq OWNED BY public.pay_roll_details.id;
 
 
 --
--- Name: pay_rolls; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: pay_rolls; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.pay_rolls (
@@ -789,10 +709,8 @@ CREATE TABLE public.pay_rolls (
 );
 
 
-ALTER TABLE public.pay_rolls OWNER TO cloudware;
-
 --
--- Name: pay_rolls_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: pay_rolls_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.pay_rolls_id_seq
@@ -803,17 +721,15 @@ CREATE SEQUENCE public.pay_rolls_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.pay_rolls_id_seq OWNER TO cloudware;
-
 --
--- Name: pay_rolls_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: pay_rolls_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.pay_rolls_id_seq OWNED BY public.pay_rolls.id;
 
 
 --
--- Name: products; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: products; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.products (
@@ -833,10 +749,8 @@ CREATE TABLE public.products (
 );
 
 
-ALTER TABLE public.products OWNER TO cloudware;
-
 --
--- Name: products_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: products_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.products_id_seq
@@ -847,17 +761,15 @@ CREATE SEQUENCE public.products_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.products_id_seq OWNER TO cloudware;
-
 --
--- Name: products_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: products_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.products_id_seq OWNED BY public.products.id;
 
 
 --
--- Name: purchase_details; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: purchase_details; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.purchase_details (
@@ -879,10 +791,8 @@ CREATE TABLE public.purchase_details (
 );
 
 
-ALTER TABLE public.purchase_details OWNER TO cloudware;
-
 --
--- Name: purchase_details_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: purchase_details_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.purchase_details_id_seq
@@ -893,17 +803,15 @@ CREATE SEQUENCE public.purchase_details_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_details_id_seq OWNER TO cloudware;
-
 --
--- Name: purchase_details_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: purchase_details_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.purchase_details_id_seq OWNED BY public.purchase_details.id;
 
 
 --
--- Name: purchases; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: purchases; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.purchases (
@@ -924,10 +832,8 @@ CREATE TABLE public.purchases (
 );
 
 
-ALTER TABLE public.purchases OWNER TO cloudware;
-
 --
--- Name: purchases_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: purchases_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.purchases_id_seq
@@ -938,17 +844,15 @@ CREATE SEQUENCE public.purchases_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchases_id_seq OWNER TO cloudware;
-
 --
--- Name: purchases_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: purchases_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.purchases_id_seq OWNED BY public.purchases.id;
 
 
 --
--- Name: suppliers; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: suppliers; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.suppliers (
@@ -964,10 +868,8 @@ CREATE TABLE public.suppliers (
 );
 
 
-ALTER TABLE public.suppliers OWNER TO cloudware;
-
 --
--- Name: suppliers_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: suppliers_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.suppliers_id_seq
@@ -978,17 +880,15 @@ CREATE SEQUENCE public.suppliers_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.suppliers_id_seq OWNER TO cloudware;
-
 --
--- Name: suppliers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: suppliers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.suppliers_id_seq OWNED BY public.suppliers.id;
 
 
 --
--- Name: temp_purchase_details; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: temp_purchase_details; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.temp_purchase_details (
@@ -998,10 +898,8 @@ CREATE TABLE public.temp_purchase_details (
 );
 
 
-ALTER TABLE public.temp_purchase_details OWNER TO cloudware;
-
 --
--- Name: temp_purchase_details_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: temp_purchase_details_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.temp_purchase_details_id_seq
@@ -1012,17 +910,15 @@ CREATE SEQUENCE public.temp_purchase_details_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.temp_purchase_details_id_seq OWNER TO cloudware;
-
 --
--- Name: temp_purchase_details_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: temp_purchase_details_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.temp_purchase_details_id_seq OWNED BY public.temp_purchase_details.id;
 
 
 --
--- Name: temp_purchases; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: temp_purchases; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.temp_purchases (
@@ -1032,10 +928,8 @@ CREATE TABLE public.temp_purchases (
 );
 
 
-ALTER TABLE public.temp_purchases OWNER TO cloudware;
-
 --
--- Name: temp_purchases_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: temp_purchases_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.temp_purchases_id_seq
@@ -1046,17 +940,15 @@ CREATE SEQUENCE public.temp_purchases_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.temp_purchases_id_seq OWNER TO cloudware;
-
 --
--- Name: temp_purchases_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: temp_purchases_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.temp_purchases_id_seq OWNED BY public.temp_purchases.id;
 
 
 --
--- Name: units; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: units; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.units (
@@ -1067,10 +959,8 @@ CREATE TABLE public.units (
 );
 
 
-ALTER TABLE public.units OWNER TO cloudware;
-
 --
--- Name: units_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: units_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.units_id_seq
@@ -1081,17 +971,15 @@ CREATE SEQUENCE public.units_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.units_id_seq OWNER TO cloudware;
-
 --
--- Name: units_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: units_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.units_id_seq OWNED BY public.units.id;
 
 
 --
--- Name: users; Type: TABLE; Schema: public; Owner: cloudware
+-- Name: users; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.users (
@@ -1109,10 +997,8 @@ CREATE TABLE public.users (
 );
 
 
-ALTER TABLE public.users OWNER TO cloudware;
-
 --
--- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: cloudware
+-- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.users_id_seq
@@ -1123,224 +1009,218 @@ CREATE SEQUENCE public.users_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.users_id_seq OWNER TO cloudware;
-
 --
--- Name: users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cloudware
+-- Name: users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.users_id_seq OWNED BY public.users.id;
 
 
 --
--- Name: brands id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: brands id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.brands ALTER COLUMN id SET DEFAULT nextval('public.brands_id_seq'::regclass);
 
 
 --
--- Name: categories id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: categories id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.categories ALTER COLUMN id SET DEFAULT nextval('public.categories_id_seq'::regclass);
 
 
 --
--- Name: customers id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: customers id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.customers ALTER COLUMN id SET DEFAULT nextval('public.customers_id_seq'::regclass);
 
 
 --
--- Name: employees id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: employees id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.employees ALTER COLUMN id SET DEFAULT nextval('public.employees_id_seq'::regclass);
 
 
 --
--- Name: expense_details id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: expense_details id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.expense_details ALTER COLUMN id SET DEFAULT nextval('public.expense_details_id_seq'::regclass);
 
 
 --
--- Name: expense_types id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: expense_types id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.expense_types ALTER COLUMN id SET DEFAULT nextval('public.expense_types_id_seq'::regclass);
 
 
 --
--- Name: expenses id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: expenses id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.expenses ALTER COLUMN id SET DEFAULT nextval('public.expenses_id_seq'::regclass);
 
 
 --
--- Name: failed_jobs id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: failed_jobs id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.failed_jobs ALTER COLUMN id SET DEFAULT nextval('public.failed_jobs_id_seq'::regclass);
 
 
 --
--- Name: income_details id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: income_details id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.income_details ALTER COLUMN id SET DEFAULT nextval('public.income_details_id_seq'::regclass);
 
 
 --
--- Name: income_types id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: income_types id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.income_types ALTER COLUMN id SET DEFAULT nextval('public.income_types_id_seq'::regclass);
 
 
 --
--- Name: incomes id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: incomes id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.incomes ALTER COLUMN id SET DEFAULT nextval('public.incomes_id_seq'::regclass);
 
 
 --
--- Name: investments id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: investments id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.investments ALTER COLUMN id SET DEFAULT nextval('public.investments_id_seq'::regclass);
 
 
 --
--- Name: invoice_details id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: invoice_details id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.invoice_details ALTER COLUMN id SET DEFAULT nextval('public.invoice_details_id_seq'::regclass);
 
 
 --
--- Name: invoices id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: invoices id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.invoices ALTER COLUMN id SET DEFAULT nextval('public.invoices_id_seq'::regclass);
 
 
 --
--- Name: migrations id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: migrations id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.migrations ALTER COLUMN id SET DEFAULT nextval('public.migrations_id_seq'::regclass);
 
 
 --
--- Name: oauth_clients id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: oauth_clients id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.oauth_clients ALTER COLUMN id SET DEFAULT nextval('public.oauth_clients_id_seq'::regclass);
 
 
 --
--- Name: oauth_personal_access_clients id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: oauth_personal_access_clients id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.oauth_personal_access_clients ALTER COLUMN id SET DEFAULT nextval('public.oauth_personal_access_clients_id_seq'::regclass);
 
 
 --
--- Name: pay_roll_details id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: pay_roll_details id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.pay_roll_details ALTER COLUMN id SET DEFAULT nextval('public.pay_roll_details_id_seq'::regclass);
 
 
 --
--- Name: pay_rolls id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: pay_rolls id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.pay_rolls ALTER COLUMN id SET DEFAULT nextval('public.pay_rolls_id_seq'::regclass);
 
 
 --
--- Name: products id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: products id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.products ALTER COLUMN id SET DEFAULT nextval('public.products_id_seq'::regclass);
 
 
 --
--- Name: purchase_details id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: purchase_details id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.purchase_details ALTER COLUMN id SET DEFAULT nextval('public.purchase_details_id_seq'::regclass);
 
 
 --
--- Name: purchases id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: purchases id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.purchases ALTER COLUMN id SET DEFAULT nextval('public.purchases_id_seq'::regclass);
 
 
 --
--- Name: suppliers id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: suppliers id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.suppliers ALTER COLUMN id SET DEFAULT nextval('public.suppliers_id_seq'::regclass);
 
 
 --
--- Name: temp_purchase_details id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: temp_purchase_details id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.temp_purchase_details ALTER COLUMN id SET DEFAULT nextval('public.temp_purchase_details_id_seq'::regclass);
 
 
 --
--- Name: temp_purchases id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: temp_purchases id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.temp_purchases ALTER COLUMN id SET DEFAULT nextval('public.temp_purchases_id_seq'::regclass);
 
 
 --
--- Name: units id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: units id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.units ALTER COLUMN id SET DEFAULT nextval('public.units_id_seq'::regclass);
 
 
 --
--- Name: users id; Type: DEFAULT; Schema: public; Owner: cloudware
+-- Name: users id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users ALTER COLUMN id SET DEFAULT nextval('public.users_id_seq'::regclass);
 
 
 --
--- Name: 17015; Type: BLOB; Schema: -; Owner: postgres
+-- Name: 17015; Type: BLOB; Schema: -; Owner: -
 --
 
 SELECT pg_catalog.lo_create('17015');
 
 
-ALTER LARGE OBJECT 17015 OWNER TO postgres;
-
 --
--- Name: 17018; Type: BLOB; Schema: -; Owner: postgres
+-- Name: 17018; Type: BLOB; Schema: -; Owner: -
 --
 
 SELECT pg_catalog.lo_create('17018');
 
 
-ALTER LARGE OBJECT 17018 OWNER TO postgres;
-
 --
--- Data for Name: brands; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: brands; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.brands (id, name, created_at, updated_at) FROM stdin;
@@ -1355,7 +1235,7 @@ COPY public.brands (id, name, created_at, updated_at) FROM stdin;
 
 
 --
--- Data for Name: categories; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: categories; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.categories (id, name, created_at, updated_at) FROM stdin;
@@ -1410,7 +1290,7 @@ COPY public.categories (id, name, created_at, updated_at) FROM stdin;
 
 
 --
--- Data for Name: customers; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: customers; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.customers (id, name, contact, address, note, status, created_at, updated_at) FROM stdin;
@@ -1421,7 +1301,7 @@ COPY public.customers (id, name, contact, address, note, status, created_at, upd
 
 
 --
--- Data for Name: employees; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: employees; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.employees (id, user_id, name, gender, dob, contact, address, profile, status, created_at, updated_at) FROM stdin;
@@ -1435,7 +1315,7 @@ COPY public.employees (id, user_id, name, gender, dob, contact, address, profile
 
 
 --
--- Data for Name: expense_details; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: expense_details; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.expense_details (id, expense_id, description, type, balance, created_at, updated_at) FROM stdin;
@@ -2887,7 +2767,7 @@ COPY public.expense_details (id, expense_id, description, type, balance, created
 
 
 --
--- Data for Name: expense_types; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: expense_types; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.expense_types (id, type, created_at, updated_at) FROM stdin;
@@ -2901,7 +2781,7 @@ COPY public.expense_types (id, type, created_at, updated_at) FROM stdin;
 
 
 --
--- Data for Name: expenses; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: expenses; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.expenses (id, date, note, created_at, updated_at) FROM stdin;
@@ -3259,7 +3139,7 @@ COPY public.expenses (id, date, note, created_at, updated_at) FROM stdin;
 
 
 --
--- Data for Name: failed_jobs; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: failed_jobs; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.failed_jobs (id, connection, queue, payload, exception, failed_at) FROM stdin;
@@ -3267,7 +3147,7 @@ COPY public.failed_jobs (id, connection, queue, payload, exception, failed_at) F
 
 
 --
--- Data for Name: income_details; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: income_details; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.income_details (id, income_id, description, type, balance, created_at, updated_at) FROM stdin;
@@ -4124,11 +4004,17 @@ COPY public.income_details (id, income_id, description, type, balance, created_a
 1362	431	ហ្វឺតបាដាងក្រោយ	ប្ដូរ	3	2020-11-02 11:58:34	2020-11-02 11:58:34
 1363	431	ក្រឡប្រាំងក្រោយ	ប្ដូរ	10	2020-11-02 11:58:34	2020-11-02 11:58:34
 1364	431	ហ្វឺតទប់ប្រេងប៉ុង	ប្ដូរ	2	2020-11-02 11:58:34	2020-11-02 11:58:34
+1365	432	ប្លាតូ	ប្ដូរ	37	2020-11-07 08:20:08	2020-11-07 08:20:08
+1366	433	ប្លាតូ	ប្ដូរ	37	2020-11-07 08:28:07	2020-11-07 08:28:07
+1367	434	ថាសកង់	ប្ដូរ	50	2020-11-07 08:33:16	2020-11-07 08:33:16
+1368	435	បោសប្លាតូ+ក្រោន	ធ្វើ	15	2020-11-07 09:02:05	2020-11-07 09:02:05
+1369	436	ហ្វឹតចុងដុំ	ប្ដូរ	4	2020-11-07 09:06:32	2020-11-07 09:06:32
+1370	436	បាដាងក្រោយ	ប្ដូរ	12	2020-11-07 09:06:32	2020-11-07 09:06:32
 \.
 
 
 --
--- Data for Name: income_types; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: income_types; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.income_types (id, type, created_at, updated_at) FROM stdin;
@@ -4148,7 +4034,7 @@ COPY public.income_types (id, type, created_at, updated_at) FROM stdin;
 
 
 --
--- Data for Name: incomes; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: incomes; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.incomes (id, date, note, created_at, updated_at) FROM stdin;
@@ -4558,11 +4444,16 @@ COPY public.incomes (id, date, note, created_at, updated_at) FROM stdin;
 429	2020-07-21	62 (2BE-1635) ឡានលីប្រូ	2020-11-02 10:42:38	2020-11-02 10:42:38
 430	2020-07-24	63 (2BE-1635) ឡានលីប្រូ	2020-11-02 10:43:52	2020-11-02 10:43:52
 431	2020-07-30	65 (2AZ-1635) ឡានលីប្រូ	2020-11-02 11:58:34	2020-11-02 11:58:34
+432	2020-10-07	89 (2AZ-1635) ឡានលីប្រូ	2020-11-07 08:20:08	2020-11-07 08:20:08
+433	2020-10-07	89 (2AZ-1635) ឡានលីប្រូ	2020-11-07 08:28:07	2020-11-07 08:28:07
+434	2020-10-07	90 ឡានលីប្រូ	2020-11-07 08:33:16	2020-11-07 08:33:16
+435	2020-10-15	93 (2AZ-7843) ឡានលីប្រូ	2020-11-07 09:02:05	2020-11-07 09:02:05
+436	2020-10-18	94 (2AZ-1638) ឡានលីប្រូ	2020-11-07 09:06:32	2020-11-07 09:06:32
 \.
 
 
 --
--- Data for Name: investments; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: investments; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.investments (id, description, balance, date, created_at, updated_at) FROM stdin;
@@ -4571,7 +4462,7 @@ COPY public.investments (id, description, balance, date, created_at, updated_at)
 
 
 --
--- Data for Name: invoice_details; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: invoice_details; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.invoice_details (id, invoice_id, purchase_detail_id, customer_id, date, qty, purchase, sale, amount, invoice_status, inventory_type, created_at, updated_at) FROM stdin;
@@ -6238,11 +6129,31 @@ COPY public.invoice_details (id, invoice_id, purchase_detail_id, customer_id, da
 2762	524	2898	2	2020-07-30	1	9	11	11	received	inventory_part	2020-11-02 11:54:25	2020-11-02 11:54:25
 2763	524	2910	2	2020-07-30	1	10	12	12	received	inventory_part	2020-11-02 11:54:25	2020-11-02 11:54:25
 2764	524	2510	2	2020-07-30	1	1	15	15	received	service	2020-11-02 11:54:25	2020-11-02 11:54:25
+2765	525	3366	2	2020-09-14	1	3	5	5	received	inventory_part	2020-11-07 08:09:01	2020-11-07 08:09:01
+2766	525	2510	2	2020-09-14	1	1	3	3	received	service	2020-11-07 08:09:01	2020-11-07 08:09:01
+2767	526	2510	2	2020-09-14	1	1	30	30	received	service	2020-11-07 08:11:53	2020-11-07 08:11:53
+2768	527	2656	2	2020-09-27	1	7	18	18	received	inventory_part	2020-11-07 08:15:42	2020-11-07 08:15:42
+2769	527	104	2	2020-09-27	1	1.5	5	5	received	inventory_part	2020-11-07 08:15:42	2020-11-07 08:15:42
+2770	527	2510	2	2020-09-27	1	1	15	15	received	service	2020-11-07 08:15:42	2020-11-07 08:15:42
+2771	528	2070	2	2020-10-07	1	27	35	35	received	inventory_part	2020-11-07 08:18:41	2020-11-07 08:18:41
+2772	528	2510	2	2020-10-07	1	1	30	30	received	service	2020-11-07 08:18:41	2020-11-07 08:18:41
+2773	529	2681	2	2020-10-13	1	10	18	18	received	inventory_part	2020-11-07 08:52:42	2020-11-07 08:52:42
+2774	529	3358	2	2020-10-13	2	1	2.5	5	received	inventory_part	2020-11-07 08:52:42	2020-11-07 08:52:42
+2775	529	1937	2	2020-10-13	2	14	20	40	received	inventory_part	2020-11-07 08:52:42	2020-11-07 08:52:42
+2776	529	3366	2	2020-10-13	1	3	5	5	received	inventory_part	2020-11-07 08:52:42	2020-11-07 08:52:42
+2777	529	2510	2	2020-10-13	1	1	20	20	received	service	2020-11-07 08:52:42	2020-11-07 08:52:42
+2778	530	2070	2	2020-10-15	1	27	35	35	received	inventory_part	2020-11-07 09:00:37	2020-11-07 09:00:37
+2779	530	3388	2	2020-10-15	1	9	18	18	received	inventory_part	2020-11-07 09:00:37	2020-11-07 09:00:37
+2780	530	2510	2	2020-10-15	1	1	5	5	received	service	2020-11-07 09:00:37	2020-11-07 09:00:37
+2781	530	2510	2	2020-10-15	1	1	35	35	received	service	2020-11-07 09:00:37	2020-11-07 09:00:37
+2782	531	2071	2	2020-10-18	1	10	15	15	received	inventory_part	2020-11-07 09:12:53	2020-11-07 09:12:53
+2783	531	3358	2	2020-10-18	5	1	3	15	received	inventory_part	2020-11-07 09:12:53	2020-11-07 09:12:53
+2784	531	2510	2	2020-10-18	1	1	15	15	received	service	2020-11-07 09:12:53	2020-11-07 09:12:53
 \.
 
 
 --
--- Data for Name: invoices; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: invoices; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.invoices (id, customer_id, user_id, date, invoice_status, description, qty, balance, due_balance, purchase_amount, amount, status, created_at, updated_at) FROM stdin;
@@ -6757,11 +6668,18 @@ COPY public.invoices (id, customer_id, user_id, date, invoice_status, descriptio
 522	2	0	2020-07-24	received	63 (2BE-1635) ឡានលីប្រូ	5	25	0	0	25	t	2020-11-02 11:24:39	2020-11-02 11:24:39
 523	2	1	2020-07-25	received	64 (2BE-1635) ឡានលីប្រូ	9	143	0	0	143	t	2020-11-02 11:42:00	2020-11-02 11:42:00
 524	2	1	2020-07-30	received	65 (2AZ-1635) ឡានលីប្រូ	6	89	0	0	89	t	2020-11-02 11:54:25	2020-11-02 11:54:25
+525	2	1	2020-09-14	received	86 (2AZ-7843) ឡានលីប្រូ	2	8	0	0	8	t	2020-11-07 08:09:01	2020-11-07 08:09:01
+526	2	1	2020-09-14	received	87 (2BE-1635) ឡានលីប្រូ	1	30	0	0	30	t	2020-11-07 08:11:53	2020-11-07 08:11:53
+527	2	1	2020-09-27	received	88 (2BE-1635) ឡានលីប្រូ	3	38	0	0	38	t	2020-11-07 08:15:42	2020-11-07 08:15:42
+528	2	1	2020-10-07	received	89 (2AZ-1635) ឡានលីប្រូ	2	65	0	0	65	t	2020-11-07 08:18:41	2020-11-07 08:18:41
+529	2	1	2020-10-13	received	92 (2AZ-7843) ឡានលីប្រូ	7	88	0	0	88	t	2020-11-07 08:52:42	2020-11-07 08:52:42
+530	2	1	2020-10-15	received	93 (2AZ-7843) ឡានលីប្រូ	4	93	0	0	93	t	2020-11-07 09:00:37	2020-11-07 09:00:37
+531	2	1	2020-10-18	received	94 (2AZ-1638) ឡានលីប្រូ	7	45	0	0	45	t	2020-11-07 09:12:53	2020-11-07 09:12:53
 \.
 
 
 --
--- Data for Name: migrations; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: migrations; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.migrations (id, migration, batch) FROM stdin;
@@ -6799,7 +6717,7 @@ COPY public.migrations (id, migration, batch) FROM stdin;
 
 
 --
--- Data for Name: oauth_access_tokens; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: oauth_access_tokens; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.oauth_access_tokens (id, user_id, client_id, name, scopes, revoked, created_at, updated_at, expires_at) FROM stdin;
@@ -6962,7 +6880,7 @@ fb66f0234ddf7a20dd0f75b9103bad5ddcccb693566487ff1d9b3b3f4fff08273e0fd4bad2bf2b13
 
 
 --
--- Data for Name: oauth_auth_codes; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: oauth_auth_codes; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.oauth_auth_codes (id, user_id, client_id, scopes, revoked, expires_at) FROM stdin;
@@ -6970,7 +6888,7 @@ COPY public.oauth_auth_codes (id, user_id, client_id, scopes, revoked, expires_a
 
 
 --
--- Data for Name: oauth_clients; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: oauth_clients; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.oauth_clients (id, user_id, name, secret, redirect, personal_access_client, password_client, revoked, created_at, updated_at) FROM stdin;
@@ -6988,7 +6906,7 @@ COPY public.oauth_clients (id, user_id, name, secret, redirect, personal_access_
 
 
 --
--- Data for Name: oauth_personal_access_clients; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: oauth_personal_access_clients; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.oauth_personal_access_clients (id, client_id, created_at, updated_at) FROM stdin;
@@ -7001,7 +6919,7 @@ COPY public.oauth_personal_access_clients (id, client_id, created_at, updated_at
 
 
 --
--- Data for Name: oauth_refresh_tokens; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: oauth_refresh_tokens; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.oauth_refresh_tokens (id, access_token_id, revoked, expires_at) FROM stdin;
@@ -7009,7 +6927,7 @@ COPY public.oauth_refresh_tokens (id, access_token_id, revoked, expires_at) FROM
 
 
 --
--- Data for Name: password_resets; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: password_resets; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.password_resets (email, token, created_at) FROM stdin;
@@ -7017,7 +6935,7 @@ COPY public.password_resets (email, token, created_at) FROM stdin;
 
 
 --
--- Data for Name: pay_roll_details; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: pay_roll_details; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.pay_roll_details (id, pay_roll_id, employee_id, date, salary, created_at, updated_at) FROM stdin;
@@ -7025,7 +6943,7 @@ COPY public.pay_roll_details (id, pay_roll_id, employee_id, date, salary, create
 
 
 --
--- Data for Name: pay_rolls; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: pay_rolls; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.pay_rolls (id, note, date, created_at, updated_at) FROM stdin;
@@ -7033,7 +6951,7 @@ COPY public.pay_rolls (id, note, date, created_at, updated_at) FROM stdin;
 
 
 --
--- Data for Name: products; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: products; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.products (id, name, description, unit, category, brand, inventory_type, default_purchase, default_sale, image, status, created_at, updated_at) FROM stdin;
@@ -8576,7 +8494,7 @@ COPY public.products (id, name, description, unit, category, brand, inventory_ty
 
 
 --
--- Data for Name: purchase_details; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: purchase_details; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location, date, qty, remain_qty, purchase, sale, amount, purchase_status, inventory_type, created_at, updated_at) FROM stdin;
@@ -9436,7 +9354,7 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 2082	71	778	1	Ly Put Garage	2020-05-02	5	5	8	15	40	received	inventory_part	2020-05-04 03:16:41	2020-05-04 03:16:41
 2083	71	779	1	Ly Put Garage	2020-05-02	1	1	23	40	23	received	inventory_part	2020-05-04 03:16:41	2020-05-04 03:16:41
 2072	71	781	1	Ly Put Garage	2020-05-02	12	11	5	10	60	received	inventory_part	2020-05-04 03:16:41	2020-05-04 03:16:41
-1937	66	737	7	Ly Put Garage	2020-04-30	9	7	14	20	126	received	inventory_part	2020-04-30 03:28:16	2020-04-30 03:28:16
+1937	66	737	7	Ly Put Garage	2020-04-30	9	5	14	20	126	received	inventory_part	2020-04-30 03:28:16	2020-04-30 03:28:16
 1971	69	751	1	Ly Put Garage	2020-05-02	6	2	15	35	90	received	inventory_part	2020-05-02 07:52:06	2020-05-02 07:52:06
 2254	80	871	1	Ly Put Garage	2020-05-08	15	14	5	10	75	received	inventory_part	2020-05-08 03:44:09	2020-05-08 03:44:09
 1929	65	730	1	Ly Put Garage	2020-04-28	8	6	3	5	24	received	inventory_part	2020-04-29 02:28:00	2020-04-29 02:28:00
@@ -9446,7 +9364,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 1935	65	181	1	Ly Put Garage	2020-04-28	17	10	4	7	68	received	inventory_part	2020-04-29 02:28:00	2020-04-29 02:28:00
 2055	72	795	1	Ly Put Garage	2020-05-02	4	3	13	25	52	received	inventory_part	2020-05-04 03:16:24	2020-05-04 03:16:24
 2077	71	773	1	Ly Put Garage	2020-05-02	7	5	3	5	21	received	inventory_part	2020-05-04 03:16:41	2020-05-04 03:16:41
-2071	72	802	1	Ly Put Garage	2020-05-02	7	6	10	15	70	received	inventory_part	2020-05-04 03:16:24	2020-05-04 03:16:24
 2249	80	866	1	Ly Put Garage	2020-05-08	18	16	5	10	90	received	inventory_part	2020-05-08 03:44:09	2020-05-08 03:44:09
 2069	72	794	1	Ly Put Garage	2020-05-02	5	4	10	16	50	received	inventory_part	2020-05-04 03:16:24	2020-05-04 03:16:24
 2057	72	797	1	Ly Put Garage	2020-05-02	58	56	1.5	3	87	received	inventory_part	2020-05-04 03:16:24	2020-05-04 03:16:24
@@ -9470,7 +9387,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 2067	72	792	1	Ly Put Garage	2020-05-02	5	4	13	20	65	received	inventory_part	2020-05-04 03:16:24	2020-05-04 03:16:24
 2068	72	793	1	Ly Put Garage	2020-05-02	5	4	12	18	60	received	inventory_part	2020-05-04 03:16:24	2020-05-04 03:16:24
 2128	74	814	18	Ly Put Garage	2020-05-05	3	2	10	20	30	received	inventory_part	2020-05-05 04:57:42	2020-05-05 04:57:42
-2070	72	801	1	Ly Put Garage	2020-05-02	7	6	27	35	189	received	inventory_part	2020-05-04 03:16:24	2020-05-04 03:16:24
 2138	75	824	18	Ly Put Garage	2020-05-05	3	3	6.5	25	19.5	received	inventory_part	2020-05-05 05:21:27	2020-05-05 05:21:27
 2139	75	825	18	Ly Put Garage	2020-05-05	3	3	5	10	15	received	inventory_part	2020-05-05 05:21:27	2020-05-05 05:21:27
 2162	76	826	18	Ly Put Garage	2020-05-05	4	4	7.5	30	30	received	inventory_part	2020-05-05 05:43:43	2020-05-05 05:43:43
@@ -9490,8 +9406,10 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 2281	81	885	1	Ly Put Garage	2020-05-08	3	3	10	25	30	received	inventory_part	2020-05-08 07:14:26	2020-05-08 07:14:26
 2282	81	886	1	Ly Put Garage	2020-05-08	1	1	10	25	10	received	inventory_part	2020-05-08 07:14:26	2020-05-08 07:14:26
 2283	81	887	1	Ly Put Garage	2020-05-08	1	1	10	25	10	received	inventory_part	2020-05-08 07:14:26	2020-05-08 07:14:26
+2071	72	802	1	Ly Put Garage	2020-05-02	7	5	10	15	70	received	inventory_part	2020-05-04 03:16:24	2020-05-04 03:16:24
 2060	72	800	1	Ly Put Garage	2020-05-02	2	0	40	45	80	received	inventory_part	2020-05-04 03:16:24	2020-05-04 03:16:24
 1918	63	728	7	Ly Put Garage	2020-04-28	9	2	4	7	36	received	inventory_part	2020-04-28 12:13:17	2020-04-28 12:13:17
+2070	72	801	1	Ly Put Garage	2020-05-02	7	4	27	35	189	received	inventory_part	2020-05-04 03:16:24	2020-05-04 03:16:24
 2284	81	888	1	Ly Put Garage	2020-05-08	2	2	30	35	60	received	inventory_part	2020-05-08 07:14:26	2020-05-08 07:14:26
 2285	81	889	1	Ly Put Garage	2020-05-08	1	1	25	45	25	received	inventory_part	2020-05-08 07:14:26	2020-05-08 07:14:26
 2286	81	890	1	Ly Put Garage	2020-05-08	1	1	25	45	25	received	inventory_part	2020-05-08 07:14:26	2020-05-08 07:14:26
@@ -9631,11 +9549,11 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 2549	93	988	25	Ly Put Garage	2020-05-18	12	7	12	18	144	received	inventory_part	2020-05-18 09:10:51	2020-05-18 09:10:51
 2567	97	1004	1	Ly Put Garage	2020-05-27	26	22	1	3	26	received	inventory_part	2020-05-27 04:03:25	2020-05-27 04:03:25
 2627	108	1035	1	Ly Put Garage	2020-06-07	10	8	1.5	2.5	15	received	inventory_part	2020-06-07 04:31:45	2020-06-07 04:31:45
-104	2	28	1	Ly Put Garage	2020-02-15	27	17	1.5	5	40.5	received	inventory_part	2020-02-17 03:55:42	2020-02-17 03:55:42
 1901	62	710	1	Ly Put Garage	2020-04-27	19	0	3	5	57	received	inventory_part	2020-04-27 13:10:46	2020-04-27 13:10:46
 2577	100	1011	29	Ly Put Garage	2020-05-29	6	0	27.6999999999999993	35	166.199999999999989	received	inventory_part	2020-05-31 13:20:15	2020-05-31 13:20:15
 1517	48	606	1	Ly Put Garage	2020-04-11	168	132	3.5	5	588	received	inventory_part	2020-04-11 13:36:38	2020-04-11 13:36:38
 532	9	157	1	Ly Put Garage	2020-02-22	11	7	3	4	33	received	inventory_part	2020-02-23 08:20:40	2020-02-23 08:20:40
+104	2	28	1	Ly Put Garage	2020-02-15	27	16	1.5	5	40.5	received	inventory_part	2020-02-17 03:55:42	2020-02-17 03:55:42
 2631	108	1039	1	Ly Put Garage	2020-06-07	1	1	23	40	23	received	inventory_part	2020-06-07 04:31:45	2020-06-07 04:31:45
 2632	108	1040	1	Ly Put Garage	2020-06-07	1	1	23	40	23	received	inventory_part	2020-06-07 04:31:45	2020-06-07 04:31:45
 2633	108	1041	1	Ly Put Garage	2020-06-07	1	1	23	40	23	received	inventory_part	2020-06-07 04:31:45	2020-06-07 04:31:45
@@ -9725,13 +9643,13 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 2746	122	1109	1	Ly Put Garage	2020-06-18	17	16	3	5	51	received	inventory_part	2020-06-18 07:15:00	2020-06-18 07:15:00
 2695	118	180	11	Ly Put Garage	2020-06-12	22	16	2.5	5	55	received	inventory_part	2020-06-12 15:30:10	2020-06-12 15:30:10
 2669	113	1061	7	Ly Put Garage	2020-06-09	46	10	0.299999999999999989	0.5	13.8000000000000007	received	inventory_part	2020-06-09 00:37:55	2020-06-09 00:37:55
+2656	111	1049	1	Ly Put Garage	2020-06-08	9	5	7	15	63	received	inventory_part	2020-06-08 14:03:09	2020-06-08 14:03:09
 2676	116	1068	1	Ly Put Garage	2020-06-09	5	0	2	2.5	10	received	inventory_part	2020-06-09 14:43:46	2020-06-09 14:43:46
 2671	114	1063	7	Ly Put Garage	2020-06-09	9	3	3	5	27	received	inventory_part	2020-06-09 06:07:57	2020-06-09 06:07:57
 2710	120	1087	1	Ly Put Garage	2020-06-15	29	28	1.5	2.5	43.5	received	inventory_part	2020-06-15 13:13:32	2020-06-15 13:13:32
 2718	120	1095	1	Ly Put Garage	2020-06-15	8	5	1.5	2.5	12	received	inventory_part	2020-06-15 13:13:32	2020-06-15 13:13:32
 2692	118	1081	11	Ly Put Garage	2020-06-12	30	18	9	12	270	received	inventory_part	2020-06-12 15:30:10	2020-06-12 15:30:10
 2707	120	1084	1	Ly Put Garage	2020-06-15	9	6	8	12	72	received	inventory_part	2020-06-15 13:13:32	2020-06-15 13:13:32
-2656	111	1049	1	Ly Put Garage	2020-06-08	9	6	7	15	63	received	inventory_part	2020-06-08 14:03:09	2020-06-08 14:03:09
 2764	126	1110	18	Ly Put Garage	2020-06-18	1	1	600	1100	600	received	inventory_part	2020-06-18 14:04:36	2020-06-18 14:04:36
 2765	126	1111	18	Ly Put Garage	2020-06-18	1	1	10	60	10	received	inventory_part	2020-06-18 14:04:36	2020-06-18 14:04:36
 2766	126	1112	18	Ly Put Garage	2020-06-18	4	4	5	90	20	received	inventory_part	2020-06-18 14:04:36	2020-06-18 14:04:36
@@ -10008,7 +9926,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 3157	180	1303	37	Ly Put Garage	2020-08-03	5	4	15	45	75	received	inventory_part	2020-08-03 03:33:35	2020-08-03 03:33:35
 2074	71	783	1	Ly Put Garage	2020-05-02	11	7	5	10	55	received	inventory_part	2020-05-04 03:16:41	2020-05-04 03:16:41
 3146	176	1297	7	Ly Put Garage	2020-07-27	10	4	1.5	3	15	received	inventory_part	2020-07-27 03:19:01	2020-07-27 03:19:01
-2681	116	1073	1	Ly Put Garage	2020-06-09	5	2	10	18	50	received	inventory_part	2020-06-09 14:43:46	2020-06-09 14:43:46
 3002	163	999	7	Ly Put Garage	2020-07-19	3	0	38	43	114	received	inventory_part	2020-07-19 07:47:31	2020-07-19 07:47:31
 3156	180	1302	37	Ly Put Garage	2020-08-03	5	3	15	45	75	received	inventory_part	2020-08-03 03:33:35	2020-08-03 03:33:35
 3136	169	1293	24	Ly Put Garage	2020-07-26	5	3	9.80000000000000071	20	49	received	inventory_part	2020-07-26 05:16:59	2020-07-26 05:16:59
@@ -10020,6 +9937,7 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 359	6	95	1	Ly Put Garage	2020-02-20	8	4	9	14	72	received	inventory_part	2020-02-22 02:05:12	2020-02-22 02:05:12
 401	7	116	1	Ly Put Garage	2020-02-21	26	16	3	5	78	received	inventory_part	2020-02-22 07:59:19	2020-02-22 07:59:19
 1515	48	604	1	Ly Put Garage	2020-04-11	37	16	14	20	518	received	inventory_part	2020-04-11 13:36:38	2020-04-11 13:36:38
+2681	116	1073	1	Ly Put Garage	2020-06-09	5	1	10	18	50	received	inventory_part	2020-06-09 14:43:46	2020-06-09 14:43:46
 3186	182	1299	1	Ly Put Garage	2020-08-03	2	2	10	15	20	received	inventory_part	2020-08-03 07:53:50	2020-08-03 07:53:50
 3187	182	1300	1	Ly Put Garage	2020-08-03	2	2	10	15	20	received	inventory_part	2020-08-03 07:53:50	2020-08-03 07:53:50
 3188	182	1301	1	Ly Put Garage	2020-08-03	3	3	10	15	30	received	inventory_part	2020-08-03 07:53:50	2020-08-03 07:53:50
@@ -10144,7 +10062,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 3352	202	1380	1	Ly Put Garage	2020-08-26	9	9	2.5	4	22.5	received	inventory_part	2020-08-26 08:34:20	2020-08-26 08:34:20
 3356	202	617	1	Ly Put Garage	2020-08-26	2	2	3	6	6	received	inventory_part	2020-08-26 08:34:20	2020-08-26 08:34:20
 3357	202	725	1	Ly Put Garage	2020-08-26	24	24	2	3	48	received	inventory_part	2020-08-26 08:34:20	2020-08-26 08:34:20
-3358	202	1382	1	Ly Put Garage	2020-08-26	30	30	1	2	30	received	inventory_part	2020-08-26 08:34:20	2020-08-26 08:34:20
 3359	202	1383	1	Ly Put Garage	2020-08-26	52	52	1	2	52	received	inventory_part	2020-08-26 08:34:20	2020-08-26 08:34:20
 3361	202	1385	1	Ly Put Garage	2020-08-26	1	1	22	27	22	received	inventory_part	2020-08-26 08:34:20	2020-08-26 08:34:20
 3355	202	178	1	Ly Put Garage	2020-08-26	18	0	2.5	6	45	received	inventory_part	2020-08-26 08:34:20	2020-08-26 08:34:20
@@ -10162,8 +10079,9 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 3375	207	1092	45	Ly Put Garage	2020-08-30	30	30	1	2.5	30	received	inventory_part	2020-08-30 05:13:01	2020-08-30 05:13:01
 3376	207	1326	45	Ly Put Garage	2020-08-30	2	2	0	8	0	received	inventory_part	2020-08-30 05:13:01	2020-08-30 05:13:01
 3377	207	1391	45	Ly Put Garage	2020-08-30	10	10	3	5	30	received	inventory_part	2020-08-30 05:13:01	2020-08-30 05:13:01
-3366	205	710	10	Ly Put Garage	2020-08-27	47	44	3	5	141	received	inventory_part	2020-08-27 12:38:12	2020-08-27 12:38:12
 3360	202	1384	1	Ly Put Garage	2020-08-26	20	9	1	2	20	received	inventory_part	2020-08-26 08:34:20	2020-08-26 08:34:20
+3358	202	1382	1	Ly Put Garage	2020-08-26	30	23	1	2	30	received	inventory_part	2020-08-26 08:34:20	2020-08-26 08:34:20
+3366	205	710	10	Ly Put Garage	2020-08-27	47	42	3	5	141	received	inventory_part	2020-08-27 12:38:12	2020-08-27 12:38:12
 3378	207	1392	45	Ly Put Garage	2020-08-30	1	1	35	50	35	received	inventory_part	2020-08-30 05:13:01	2020-08-30 05:13:01
 3379	208	56	7	Ly Put Garage	2020-08-31	1	0	8	26	8	received	inventory_part	2020-08-31 06:35:37	2020-08-31 06:35:37
 3380	208	1395	7	Ly Put Garage	2020-08-31	5	0	8	26	40	received	inventory_part	2020-08-31 06:35:37	2020-08-31 06:35:37
@@ -10171,7 +10089,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 3385	211	603	46	Ly Put Garage	2020-09-04	10	10	2.5	7	25	received	inventory_part	2020-09-04 03:23:27	2020-09-04 03:23:27
 3386	211	618	46	Ly Put Garage	2020-09-04	20	20	1.30000000000000004	3	26	received	inventory_part	2020-09-04 03:23:27	2020-09-04 03:23:27
 3387	212	386	19	Ly Put Garage	2020-09-04	2	2	45	65	90	received	inventory_part	2020-09-04 03:39:44	2020-09-04 03:39:44
-3388	212	853	19	Ly Put Garage	2020-09-04	2	2	9	16	18	received	inventory_part	2020-09-04 03:39:44	2020-09-04 03:39:44
 3389	212	848	19	Ly Put Garage	2020-09-04	7	7	7.5	13	52.5	received	inventory_part	2020-09-04 03:39:44	2020-09-04 03:39:44
 3390	212	301	19	Ly Put Garage	2020-09-04	2	2	23	38	46	received	inventory_part	2020-09-04 03:39:44	2020-09-04 03:39:44
 3391	212	300	19	Ly Put Garage	2020-09-04	2	2	23	38	46	received	inventory_part	2020-09-04 03:39:44	2020-09-04 03:39:44
@@ -10208,6 +10125,7 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 3133	169	193	24	Ly Put Garage	2020-07-26	20	17	4.5	7	90	received	inventory_part	2020-07-26 05:16:59	2020-07-26 05:16:59
 3404	216	796	1	Ly Put Garage	2020-09-07	2	0	25	45	50	received	inventory_part	2020-09-07 12:53:11	2020-09-07 12:53:11
 2076	71	785	1	Ly Put Garage	2020-05-02	13	4	5	10	65	received	inventory_part	2020-05-04 03:16:41	2020-05-04 03:16:41
+3388	212	853	19	Ly Put Garage	2020-09-04	2	1	9	16	18	received	inventory_part	2020-09-04 03:39:44	2020-09-04 03:39:44
 3381	208	1393	7	Ly Put Garage	2020-08-31	10	5	8	10	80	received	inventory_part	2020-08-31 06:35:37	2020-08-31 06:35:37
 2965	158	725	13	Ly Put Garage	2020-07-12	48	19	2.33000000000000007	3	111.840000000000003	received	inventory_part	2020-07-12 07:51:07	2020-07-12 07:51:07
 3384	210	1397	7	Ly Put Garage	2020-08-31	10	7	0.5	1	5	received	inventory_part	2020-08-31 12:26:17	2020-08-31 12:26:17
@@ -10434,7 +10352,7 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 
 
 --
--- Data for Name: purchases; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: purchases; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.purchases (id, supplier_id, user_id, location, date, purchase_status, description, qty, balance, due_balance, amount, status, created_at, updated_at) FROM stdin;
@@ -10711,7 +10629,7 @@ COPY public.purchases (id, supplier_id, user_id, location, date, purchase_status
 
 
 --
--- Data for Name: suppliers; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: suppliers; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.suppliers (id, name, company, contact, address, note, status, created_at, updated_at) FROM stdin;
@@ -10775,7 +10693,7 @@ COPY public.suppliers (id, name, company, contact, address, note, status, create
 
 
 --
--- Data for Name: temp_purchase_details; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: temp_purchase_details; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.temp_purchase_details (id, created_at, updated_at) FROM stdin;
@@ -10783,7 +10701,7 @@ COPY public.temp_purchase_details (id, created_at, updated_at) FROM stdin;
 
 
 --
--- Data for Name: temp_purchases; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: temp_purchases; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.temp_purchases (id, created_at, updated_at) FROM stdin;
@@ -10791,7 +10709,7 @@ COPY public.temp_purchases (id, created_at, updated_at) FROM stdin;
 
 
 --
--- Data for Name: units; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: units; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.units (id, name, created_at, updated_at) FROM stdin;
@@ -10814,7 +10732,7 @@ COPY public.units (id, name, created_at, updated_at) FROM stdin;
 
 
 --
--- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: cloudware
+-- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.users (id, profile, name, email, role, email_verified_at, password, status, remember_token, created_at, updated_at) FROM stdin;
@@ -10825,196 +10743,196 @@ COPY public.users (id, profile, name, email, role, email_verified_at, password, 
 
 
 --
--- Name: brands_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: brands_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.brands_id_seq', 7, true);
 
 
 --
--- Name: categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.categories_id_seq', 47, true);
 
 
 --
--- Name: customers_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: customers_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.customers_id_seq', 4, true);
 
 
 --
--- Name: employees_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: employees_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.employees_id_seq', 6, true);
 
 
 --
--- Name: expense_details_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: expense_details_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.expense_details_id_seq', 2593, true);
 
 
 --
--- Name: expense_types_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: expense_types_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.expense_types_id_seq', 6, true);
 
 
 --
--- Name: expenses_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: expenses_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.expenses_id_seq', 353, true);
 
 
 --
--- Name: failed_jobs_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: failed_jobs_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.failed_jobs_id_seq', 1, false);
 
 
 --
--- Name: income_details_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: income_details_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.income_details_id_seq', 1364, true);
+SELECT pg_catalog.setval('public.income_details_id_seq', 1370, true);
 
 
 --
--- Name: income_types_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: income_types_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.income_types_id_seq', 12, true);
 
 
 --
--- Name: incomes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: incomes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.incomes_id_seq', 431, true);
+SELECT pg_catalog.setval('public.incomes_id_seq', 436, true);
 
 
 --
--- Name: investments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: investments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.investments_id_seq', 1, true);
 
 
 --
--- Name: invoice_details_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: invoice_details_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.invoice_details_id_seq', 2764, true);
-
-
---
--- Name: invoices_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
---
-
-SELECT pg_catalog.setval('public.invoices_id_seq', 524, true);
+SELECT pg_catalog.setval('public.invoice_details_id_seq', 2784, true);
 
 
 --
--- Name: migrations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: invoices_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.invoices_id_seq', 531, true);
+
+
+--
+-- Name: migrations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.migrations_id_seq', 475, true);
 
 
 --
--- Name: oauth_clients_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: oauth_clients_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.oauth_clients_id_seq', 10, true);
 
 
 --
--- Name: oauth_personal_access_clients_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: oauth_personal_access_clients_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.oauth_personal_access_clients_id_seq', 5, true);
 
 
 --
--- Name: pay_roll_details_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: pay_roll_details_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.pay_roll_details_id_seq', 1, false);
 
 
 --
--- Name: pay_rolls_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: pay_rolls_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.pay_rolls_id_seq', 1, false);
 
 
 --
--- Name: products_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: products_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.products_id_seq', 1535, true);
 
 
 --
--- Name: purchase_details_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: purchase_details_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.purchase_details_id_seq', 3630, true);
 
 
 --
--- Name: purchases_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: purchases_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.purchases_id_seq', 269, true);
 
 
 --
--- Name: suppliers_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: suppliers_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.suppliers_id_seq', 57, true);
 
 
 --
--- Name: temp_purchase_details_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: temp_purchase_details_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.temp_purchase_details_id_seq', 1, false);
 
 
 --
--- Name: temp_purchases_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: temp_purchases_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.temp_purchases_id_seq', 1, false);
 
 
 --
--- Name: units_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: units_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.units_id_seq', 15, true);
 
 
 --
--- Name: users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: cloudware
+-- Name: users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.users_id_seq', 6, true);
 
 
 --
--- Data for Name: BLOBS; Type: BLOBS; Schema: -; Owner: 
+-- Data for Name: BLOBS; Type: BLOBS; Schema: -; Owner: -
 --
 
 BEGIN;
@@ -11029,7 +10947,7 @@ SELECT pg_catalog.lo_close(0);
 COMMIT;
 
 --
--- Name: brands brands_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: brands brands_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.brands
@@ -11037,7 +10955,7 @@ ALTER TABLE ONLY public.brands
 
 
 --
--- Name: categories categories_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: categories categories_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.categories
@@ -11045,7 +10963,7 @@ ALTER TABLE ONLY public.categories
 
 
 --
--- Name: customers customers_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: customers customers_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.customers
@@ -11053,7 +10971,7 @@ ALTER TABLE ONLY public.customers
 
 
 --
--- Name: employees employees_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: employees employees_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.employees
@@ -11061,7 +10979,7 @@ ALTER TABLE ONLY public.employees
 
 
 --
--- Name: expense_details expense_details_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: expense_details expense_details_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.expense_details
@@ -11069,7 +10987,7 @@ ALTER TABLE ONLY public.expense_details
 
 
 --
--- Name: expense_types expense_types_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: expense_types expense_types_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.expense_types
@@ -11077,7 +10995,7 @@ ALTER TABLE ONLY public.expense_types
 
 
 --
--- Name: expenses expenses_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: expenses expenses_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.expenses
@@ -11085,7 +11003,7 @@ ALTER TABLE ONLY public.expenses
 
 
 --
--- Name: failed_jobs failed_jobs_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: failed_jobs failed_jobs_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.failed_jobs
@@ -11093,7 +11011,7 @@ ALTER TABLE ONLY public.failed_jobs
 
 
 --
--- Name: income_details income_details_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: income_details income_details_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.income_details
@@ -11101,7 +11019,7 @@ ALTER TABLE ONLY public.income_details
 
 
 --
--- Name: income_types income_types_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: income_types income_types_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.income_types
@@ -11109,7 +11027,7 @@ ALTER TABLE ONLY public.income_types
 
 
 --
--- Name: incomes incomes_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: incomes incomes_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.incomes
@@ -11117,7 +11035,7 @@ ALTER TABLE ONLY public.incomes
 
 
 --
--- Name: investments investments_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: investments investments_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.investments
@@ -11125,7 +11043,7 @@ ALTER TABLE ONLY public.investments
 
 
 --
--- Name: invoice_details invoice_details_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: invoice_details invoice_details_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.invoice_details
@@ -11133,7 +11051,7 @@ ALTER TABLE ONLY public.invoice_details
 
 
 --
--- Name: invoices invoices_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: invoices invoices_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.invoices
@@ -11141,7 +11059,7 @@ ALTER TABLE ONLY public.invoices
 
 
 --
--- Name: migrations migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: migrations migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.migrations
@@ -11149,7 +11067,7 @@ ALTER TABLE ONLY public.migrations
 
 
 --
--- Name: oauth_access_tokens oauth_access_tokens_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: oauth_access_tokens oauth_access_tokens_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.oauth_access_tokens
@@ -11157,7 +11075,7 @@ ALTER TABLE ONLY public.oauth_access_tokens
 
 
 --
--- Name: oauth_auth_codes oauth_auth_codes_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: oauth_auth_codes oauth_auth_codes_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.oauth_auth_codes
@@ -11165,7 +11083,7 @@ ALTER TABLE ONLY public.oauth_auth_codes
 
 
 --
--- Name: oauth_clients oauth_clients_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: oauth_clients oauth_clients_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.oauth_clients
@@ -11173,7 +11091,7 @@ ALTER TABLE ONLY public.oauth_clients
 
 
 --
--- Name: oauth_personal_access_clients oauth_personal_access_clients_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: oauth_personal_access_clients oauth_personal_access_clients_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.oauth_personal_access_clients
@@ -11181,7 +11099,7 @@ ALTER TABLE ONLY public.oauth_personal_access_clients
 
 
 --
--- Name: oauth_refresh_tokens oauth_refresh_tokens_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: oauth_refresh_tokens oauth_refresh_tokens_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.oauth_refresh_tokens
@@ -11189,7 +11107,7 @@ ALTER TABLE ONLY public.oauth_refresh_tokens
 
 
 --
--- Name: pay_roll_details pay_roll_details_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: pay_roll_details pay_roll_details_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.pay_roll_details
@@ -11197,7 +11115,7 @@ ALTER TABLE ONLY public.pay_roll_details
 
 
 --
--- Name: pay_rolls pay_rolls_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: pay_rolls pay_rolls_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.pay_rolls
@@ -11205,7 +11123,7 @@ ALTER TABLE ONLY public.pay_rolls
 
 
 --
--- Name: products products_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: products products_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.products
@@ -11213,7 +11131,7 @@ ALTER TABLE ONLY public.products
 
 
 --
--- Name: purchase_details purchase_details_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: purchase_details purchase_details_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.purchase_details
@@ -11221,7 +11139,7 @@ ALTER TABLE ONLY public.purchase_details
 
 
 --
--- Name: purchases purchases_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: purchases purchases_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.purchases
@@ -11229,7 +11147,7 @@ ALTER TABLE ONLY public.purchases
 
 
 --
--- Name: suppliers suppliers_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: suppliers suppliers_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.suppliers
@@ -11237,7 +11155,7 @@ ALTER TABLE ONLY public.suppliers
 
 
 --
--- Name: temp_purchase_details temp_purchase_details_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: temp_purchase_details temp_purchase_details_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.temp_purchase_details
@@ -11245,7 +11163,7 @@ ALTER TABLE ONLY public.temp_purchase_details
 
 
 --
--- Name: temp_purchases temp_purchases_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: temp_purchases temp_purchases_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.temp_purchases
@@ -11253,7 +11171,7 @@ ALTER TABLE ONLY public.temp_purchases
 
 
 --
--- Name: units units_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: units units_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.units
@@ -11261,7 +11179,7 @@ ALTER TABLE ONLY public.units
 
 
 --
--- Name: users users_email_unique; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: users users_email_unique; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users
@@ -11269,7 +11187,7 @@ ALTER TABLE ONLY public.users
 
 
 --
--- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users
@@ -11277,42 +11195,42 @@ ALTER TABLE ONLY public.users
 
 
 --
--- Name: oauth_access_tokens_user_id_index; Type: INDEX; Schema: public; Owner: cloudware
+-- Name: oauth_access_tokens_user_id_index; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX oauth_access_tokens_user_id_index ON public.oauth_access_tokens USING btree (user_id);
 
 
 --
--- Name: oauth_clients_user_id_index; Type: INDEX; Schema: public; Owner: cloudware
+-- Name: oauth_clients_user_id_index; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX oauth_clients_user_id_index ON public.oauth_clients USING btree (user_id);
 
 
 --
--- Name: oauth_personal_access_clients_client_id_index; Type: INDEX; Schema: public; Owner: cloudware
+-- Name: oauth_personal_access_clients_client_id_index; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX oauth_personal_access_clients_client_id_index ON public.oauth_personal_access_clients USING btree (client_id);
 
 
 --
--- Name: oauth_refresh_tokens_access_token_id_index; Type: INDEX; Schema: public; Owner: cloudware
+-- Name: oauth_refresh_tokens_access_token_id_index; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX oauth_refresh_tokens_access_token_id_index ON public.oauth_refresh_tokens USING btree (access_token_id);
 
 
 --
--- Name: password_resets_email_index; Type: INDEX; Schema: public; Owner: cloudware
+-- Name: password_resets_email_index; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX password_resets_email_index ON public.password_resets USING btree (email);
 
 
 --
--- Name: expense_details expense_details_expense_id_foreign; Type: FK CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: expense_details expense_details_expense_id_foreign; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.expense_details
@@ -11320,7 +11238,7 @@ ALTER TABLE ONLY public.expense_details
 
 
 --
--- Name: income_details income_details_income_id_foreign; Type: FK CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: income_details income_details_income_id_foreign; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.income_details
@@ -11328,7 +11246,7 @@ ALTER TABLE ONLY public.income_details
 
 
 --
--- Name: invoice_details invoice_details_invoice_id_foreign; Type: FK CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: invoice_details invoice_details_invoice_id_foreign; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.invoice_details
@@ -11336,7 +11254,7 @@ ALTER TABLE ONLY public.invoice_details
 
 
 --
--- Name: pay_roll_details pay_roll_details_pay_roll_id_foreign; Type: FK CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: pay_roll_details pay_roll_details_pay_roll_id_foreign; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.pay_roll_details
@@ -11344,18 +11262,11 @@ ALTER TABLE ONLY public.pay_roll_details
 
 
 --
--- Name: purchase_details purchase_details_purchase_id_foreign; Type: FK CONSTRAINT; Schema: public; Owner: cloudware
+-- Name: purchase_details purchase_details_purchase_id_foreign; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.purchase_details
     ADD CONSTRAINT purchase_details_purchase_id_foreign FOREIGN KEY (purchase_id) REFERENCES public.purchases(id) ON DELETE CASCADE;
-
-
---
--- Name: FUNCTION lo_export(oid, text); Type: ACL; Schema: pg_catalog; Owner: postgres
---
-
-REVOKE ALL ON FUNCTION pg_catalog.lo_export(oid, text) FROM PUBLIC;
 
 
 --
