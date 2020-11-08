@@ -2763,6 +2763,10 @@ COPY public.expense_details (id, expense_id, description, type, balance, created
 2590	351	ម្ហូប+ចំណី	ទិញ	13.25	2020-11-07 03:36:06	2020-11-07 03:36:06
 2592	353	ម្ហូប	ទិញ	5	2020-11-07 03:38:29	2020-11-07 03:38:29
 2593	352	ទៅពេទ្យសៀមរាបជួសភ្នែក៨៣៥	ចំណាយ	20.875	2020-11-07 03:39:50	2020-11-07 03:39:50
+2594	354	ម្ហូប	ទិញ	3	2020-11-08 08:52:13	2020-11-08 08:52:13
+2595	355	ម្ហូប	ទិញ	12.125	2020-11-08 08:53:27	2020-11-08 08:53:27
+2596	356	ពិល៥+ថ្នាំក្រពះបៀម	ទិញ	17.6000000000000014	2020-11-08 08:55:55	2020-11-08 08:55:55
+2597	357	ផ្លែឈើ	ទិញ	5.25	2020-11-08 08:56:31	2020-11-08 08:56:31
 \.
 
 
@@ -3135,6 +3139,10 @@ COPY public.expenses (id, date, note, created_at, updated_at) FROM stdin;
 351	2020-11-05	ម្ហូប	2020-11-07 03:36:06	2020-11-07 03:36:06
 353	2020-11-06	ម្ហូប	2020-11-07 03:38:29	2020-11-07 03:38:29
 352	2020-11-06	ទៅពេទ្យសៀមរាបជួសភ្នែក	2020-11-07 03:37:46	2020-11-07 03:39:50
+354	2020-11-07	ម្ហូប	2020-11-08 08:52:13	2020-11-08 08:52:13
+355	2020-11-08	ម្ហូប	2020-11-08 08:53:27	2020-11-08 08:53:27
+356	2020-11-08	ពិល៥+ថ្នាំក្រពះបៀម	2020-11-08 08:55:55	2020-11-08 08:55:55
+357	2020-11-08	ផ្លែឈើ	2020-11-08 08:56:31	2020-11-08 08:56:31
 \.
 
 
@@ -4024,6 +4032,17 @@ COPY public.income_details (id, income_id, description, type, balance, created_a
 1383	441	ស្បែកប្រាំង	ប្ដូរ	10	2020-11-07 11:25:01	2020-11-07 11:25:01
 1384	442	តម្រងម៉ាស៊ូត	ប្ដូរ	3	2020-11-07 11:26:31	2020-11-07 11:26:31
 1385	442	ខ្វែង	ប្ដូរ	24	2020-11-07 11:26:31	2020-11-07 11:26:31
+1386	443	បោសតាំបួរ	ធ្វើ	15	2020-11-08 08:17:40	2020-11-08 08:17:40
+1387	443	ថ្គាមប្រាំងមុខ	ប្ដូរ	10	2020-11-08 08:17:40	2020-11-08 08:17:40
+1388	444	បោសតាំបួរ	ធ្វើ	15	2020-11-08 08:20:47	2020-11-08 08:20:47
+1389	444	ហ្កាស	ថែម	15	2020-11-08 08:20:47	2020-11-08 08:20:47
+1390	444	សំបកកង់១គ្រាប់	ប្ដូរ	50	2020-11-08 08:20:47	2020-11-08 08:20:47
+1391	445	ជន្ទាស់មេ	ប្ដូរ	40	2020-11-08 08:40:36	2020-11-08 08:40:36
+1392	445	ជន្ទាស់អោប	ប្ដូរ	36	2020-11-08 08:40:36	2020-11-08 08:40:36
+1393	445	កុងរុយ	ប្ដូរ	5	2020-11-08 08:40:36	2020-11-08 08:40:36
+1394	445	កុងឌៀ	ប្ដូរ	8	2020-11-08 08:40:36	2020-11-08 08:40:36
+1395	446	ជន្ទល់បើកកំបូល	ប្ដូរ	10	2020-11-08 08:46:46	2020-11-08 08:46:46
+1396	447	កុងតាក់កំដៅ	ប្ដូរ	5	2020-11-08 08:48:23	2020-11-08 08:48:23
 \.
 
 
@@ -4469,6 +4488,11 @@ COPY public.incomes (id, date, note, created_at, updated_at) FROM stdin;
 440	2020-10-18	63 (2AQ-2148) ឡានEragold សាប៊ូនីហ្សា	2020-11-07 11:19:09	2020-11-07 11:19:48
 441	2020-10-19	64 (3A-0945) ឡាន2ton សាប៊ូនីហ្សា	2020-11-07 11:25:01	2020-11-07 11:25:01
 442	2020-10-25	65 (3A-0945) ឡាន2ton សាប៊ូនីហ្សា	2020-11-07 11:26:31	2020-11-07 11:26:31
+443	2020-10-29	2267 (ឡានម៉េងគួង)	2020-11-08 08:17:40	2020-11-08 08:17:40
+444	2020-10-29	2268 (2AA-5163) ឡានអាអូន	2020-11-08 08:20:47	2020-11-08 08:20:47
+445	2020-10-30	2270 (2B-1545) ឡានNAVARA លក់ចេកចៀន	2020-11-08 08:40:36	2020-11-08 08:40:36
+446	2020-11-01	2271 (2L-1824) ឡានបាឡែន	2020-11-08 08:46:46	2020-11-08 08:46:46
+447	2020-11-01	2272 (2L-1824) ឡានឆ្លាម	2020-11-08 08:48:23	2020-11-08 08:48:23
 \.
 
 
@@ -6201,6 +6225,43 @@ COPY public.invoice_details (id, invoice_id, purchase_detail_id, customer_id, da
 2855	541	2578	3	2020-10-28	1	20	30	30	received	inventory_part	2020-11-07 14:30:12	2020-11-07 14:30:12
 2856	542	401	3	2020-11-05	1	3	5	5	received	inventory_part	2020-11-07 14:30:43	2020-11-07 14:30:43
 2857	542	2578	3	2020-11-05	1	20	30	30	received	inventory_part	2020-11-07 14:30:43	2020-11-07 14:30:43
+2862	543	43	1	2020-10-29	1	10	18	18	received	inventory_part	2020-11-08 08:16:09	2020-11-08 08:16:09
+2863	543	1337	1	2020-10-29	2	5	7	14	received	inventory_part	2020-11-08 08:16:09	2020-11-08 08:16:09
+2864	543	3385	1	2020-10-29	2	2.5	5	10	received	inventory_part	2020-11-08 08:16:09	2020-11-08 08:16:09
+2865	543	3559	1	2020-10-29	1	20	20	20	received	inventory_part	2020-11-08 08:16:09	2020-11-08 08:16:09
+2866	543	246	1	2020-10-29	1	70	85	85	received	inventory_part	2020-11-08 08:16:09	2020-11-08 08:16:09
+2867	543	1972	1	2020-10-29	1	10	15	15	received	inventory_part	2020-11-08 08:16:09	2020-11-08 08:16:09
+2868	543	2510	1	2020-10-29	1	1	10	10	received	service	2020-11-08 08:16:09	2020-11-08 08:16:09
+2869	544	3492	1	2020-10-29	1	27.6999999999999993	30	30	received	inventory_part	2020-11-08 08:26:19	2020-11-08 08:26:19
+2870	544	3528	1	2020-10-29	1	6.5	10	10	received	inventory_part	2020-11-08 08:26:19	2020-11-08 08:26:19
+2871	544	1006	1	2020-10-29	1	2.5	5	5	received	inventory_part	2020-11-08 08:26:19	2020-11-08 08:26:19
+2872	544	2712	1	2020-10-29	1	1.5	2	2	received	inventory_part	2020-11-08 08:26:19	2020-11-08 08:26:19
+2873	544	3133	1	2020-10-29	1	4.5	5	5	received	inventory_part	2020-11-08 08:26:19	2020-11-08 08:26:19
+2874	544	613	1	2020-10-29	1	3	5	5	received	inventory_part	2020-11-08 08:26:19	2020-11-08 08:26:19
+2875	544	996	1	2020-10-29	1	80	90	90	received	inventory_part	2020-11-08 08:26:19	2020-11-08 08:26:19
+2876	544	1238	1	2020-10-29	1	3	5	5	received	inventory_part	2020-11-08 08:26:19	2020-11-08 08:26:19
+2877	544	2675	1	2020-10-29	1	2.5	10	10	received	inventory_part	2020-11-08 08:26:19	2020-11-08 08:26:19
+2878	544	1277	1	2020-10-29	1	5	10	10	received	inventory_part	2020-11-08 08:26:19	2020-11-08 08:26:19
+2879	544	1276	1	2020-10-29	1	5	10	10	received	inventory_part	2020-11-08 08:26:19	2020-11-08 08:26:19
+2880	544	2965	1	2020-10-29	1	2.33000000000000007	3	3	received	inventory_part	2020-11-08 08:26:19	2020-11-08 08:26:19
+2881	545	3621	1	2020-10-29	2	26	30	60	received	inventory_part	2020-11-08 08:37:53	2020-11-08 08:37:53
+2882	545	3009	1	2020-10-29	1	10	10	10	received	inventory_part	2020-11-08 08:37:53	2020-11-08 08:37:53
+2883	545	1282	1	2020-10-29	1	20	25	25	received	inventory_part	2020-11-08 08:37:53	2020-11-08 08:37:53
+2884	545	2627	1	2020-10-29	1	1.5	1.5	1.5	received	inventory_part	2020-11-08 08:37:53	2020-11-08 08:37:53
+2885	545	2628	1	2020-10-29	1	1.5	1.5	1.5	received	inventory_part	2020-11-08 08:37:53	2020-11-08 08:37:53
+2886	545	2629	1	2020-10-29	1	1.5	2	2	received	inventory_part	2020-11-08 08:37:53	2020-11-08 08:37:53
+2887	546	2510	1	2020-10-30	1	1	20	20	received	service	2020-11-08 08:41:47	2020-11-08 08:41:47
+2888	547	2255	1	2020-11-01	1	30	45	45	received	inventory_part	2020-11-08 08:45:26	2020-11-08 08:45:26
+2889	547	2710	1	2020-11-01	1	1.5	3	3	received	inventory_part	2020-11-08 08:45:26	2020-11-08 08:45:26
+2890	547	2965	1	2020-11-01	1	2.33000000000000007	3	3	received	inventory_part	2020-11-08 08:45:26	2020-11-08 08:45:26
+2891	547	3026	1	2020-11-01	1	10	15	15	received	inventory_part	2020-11-08 08:45:26	2020-11-08 08:45:26
+2892	547	342	1	2020-11-01	1	25	30	30	received	inventory_part	2020-11-08 08:45:26	2020-11-08 08:45:26
+2893	547	343	1	2020-11-01	1	15	30	30	received	inventory_part	2020-11-08 08:45:26	2020-11-08 08:45:26
+2894	547	344	1	2020-11-01	1	15	35	35	received	inventory_part	2020-11-08 08:45:26	2020-11-08 08:45:26
+2895	547	915	1	2020-11-01	1	5	8	8	received	inventory_part	2020-11-08 08:45:26	2020-11-08 08:45:26
+2896	547	2510	1	2020-11-01	1	1	15	15	received	service	2020-11-08 08:45:26	2020-11-08 08:45:26
+2897	548	3513	1	2020-11-01	1	8	20	20	received	inventory_part	2020-11-08 08:49:48	2020-11-08 08:49:48
+2898	548	2510	1	2020-11-01	1	1	10	10	received	service	2020-11-08 08:49:48	2020-11-08 08:49:48
 \.
 
 
@@ -6738,6 +6799,12 @@ COPY public.invoices (id, customer_id, user_id, date, invoice_status, descriptio
 533	3	0	2020-10-05	received	59 (3A-0945) ឡាន2ton សាប៊ូនីហ្សា	5	40	0	0	40	t	2020-11-07 09:59:01	2020-11-07 14:29:00
 541	3	0	2020-10-28	received	67 (3A-0945) ឡាន2ton សាប៊ូនីហ្សា	2	35	0	0	35	t	2020-11-07 11:33:55	2020-11-07 14:30:12
 542	3	0	2020-11-05	received	68 (2A-5188) ឡានសាំយ៉ុង សាប៊ូនីហ្សា	2	35	0	0	35	t	2020-11-07 11:37:45	2020-11-07 14:30:43
+543	1	1	2020-10-29	received	2267 (ឡានម៉េងគួង)	9	172	0	0	172	t	2020-11-08 08:06:08	2020-11-08 08:16:09
+544	1	1	2020-10-29	received	2268 (2AA-5163) ឡានអាអូន	12	185	0	0	185	t	2020-11-08 08:26:19	2020-11-08 08:26:19
+545	1	1	2020-10-29	received	2269 (2AA-5163) ឡានអាអូន	7	100	0	0	100	t	2020-11-08 08:37:53	2020-11-08 08:37:53
+546	1	1	2020-10-30	received	2270 (2B-1545) ឡានNAVARA ចេកចៀន	1	20	0	0	20	t	2020-11-08 08:41:47	2020-11-08 08:41:47
+547	1	1	2020-11-01	received	2271 (2L1824) ឡានបាឡែន	9	184	0	0	184	t	2020-11-08 08:45:26	2020-11-08 08:45:26
+548	1	1	2020-11-01	received	2272 ឡានឆ្លាម	2	30	0	0	30	t	2020-11-08 08:49:48	2020-11-08 08:49:48
 \.
 
 
@@ -6939,6 +7006,7 @@ fb66f0234ddf7a20dd0f75b9103bad5ddcccb693566487ff1d9b3b3f4fff08273e0fd4bad2bf2b13
 5cba60608f5cd658fe34bccb0269f834c7d448f791ba38cb931b19607a1ef8eb950360aa23d0247a	1	9	authToken	[]	f	2020-10-22 13:53:24	2020-10-22 13:53:24	2021-10-22 13:53:24
 0e2a23dcba1830a9157e4f085606b8c6fff3a50878df704c6149901b400f86b19e05813f1aa5442a	6	9	authToken	[]	f	2020-11-02 12:25:35	2020-11-02 12:25:35	2021-11-02 12:25:35
 1c36e365f373f03b79e2bc3ca61858ad3f8fd1b2c2ebe90ded41cba74b69a0a074036afdf33d27c2	1	9	authToken	[]	f	2020-11-05 06:01:01	2020-11-05 06:01:01	2021-11-05 06:01:01
+14cb6f451d2463a2bddb915bade37a8bcca520b5cef55fd1987a19575322dc5775bc9725d24459c1	1	9	authToken	[]	f	2020-11-07 18:58:49	2020-11-07 18:58:49	2021-11-07 18:58:49
 \.
 
 
@@ -8587,21 +8655,17 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 339	5	72	1	Ly Put Garage	2020-02-18	3	3	2	5	6	received	inventory_part	2020-02-22 02:01:13	2020-02-22 02:01:13
 340	5	73	1	Ly Put Garage	2020-02-18	4	4	5	8	20	received	inventory_part	2020-02-22 02:01:13	2020-02-22 02:01:13
 341	5	74	1	Ly Put Garage	2020-02-18	5	5	4	5	20	received	inventory_part	2020-02-22 02:01:13	2020-02-22 02:01:13
-342	5	75	1	Ly Put Garage	2020-02-18	6	6	25	35	150	received	inventory_part	2020-02-22 02:01:13	2020-02-22 02:01:13
-344	5	77	1	Ly Put Garage	2020-02-18	5	5	15	35	75	received	inventory_part	2020-02-22 02:01:13	2020-02-22 02:01:13
 38	1	2	1	Ly Put Garage	2020-02-15	2	2	35	50	70	received	inventory_part	2020-02-15 10:28:50	2020-02-15 10:28:50
 39	1	3	1	Ly Put Garage	2020-02-15	2	2	35	50	70	received	inventory_part	2020-02-15 10:28:50	2020-02-15 10:28:50
 40	1	4	1	Ly Put Garage	2020-02-15	2	2	35	45	70	received	inventory_part	2020-02-15 10:28:50	2020-02-15 10:28:50
 41	1	5	1	Ly Put Garage	2020-02-15	2	2	35	45	70	received	inventory_part	2020-02-15 10:28:50	2020-02-15 10:28:50
 42	1	6	1	Ly Put Garage	2020-02-15	2	2	35	45	70	received	inventory_part	2020-02-15 10:28:50	2020-02-15 10:28:50
-43	1	7	1	Ly Put Garage	2020-02-15	8	8	10	18	80	received	inventory_part	2020-02-15 10:28:50	2020-02-15 10:28:50
 44	1	8	1	Ly Put Garage	2020-02-15	1	1	35	45	35	received	inventory_part	2020-02-15 10:28:50	2020-02-15 10:28:50
 45	1	10	1	Ly Put Garage	2020-02-15	1	1	25	35	25	received	inventory_part	2020-02-15 10:28:50	2020-02-15 10:28:50
 46	1	11	1	Ly Put Garage	2020-02-15	1	1	25	35	25	received	inventory_part	2020-02-15 10:28:50	2020-02-15 10:28:50
 47	1	12	1	Ly Put Garage	2020-02-15	1	1	30	45	30	received	inventory_part	2020-02-15 10:28:50	2020-02-15 10:28:50
 48	1	13	1	Ly Put Garage	2020-02-15	1	1	30	45	30	received	inventory_part	2020-02-15 10:28:50	2020-02-15 10:28:50
 50	1	15	1	Ly Put Garage	2020-02-15	1	1	20	45	20	received	inventory_part	2020-02-15 10:28:50	2020-02-15 10:28:50
-343	5	76	1	Ly Put Garage	2020-02-18	5	4	15	35	75	received	inventory_part	2020-02-22 02:01:13	2020-02-22 02:01:13
 105	2	29	1	Ly Put Garage	2020-02-15	6	3	7	13	42	received	inventory_part	2020-02-17 03:55:42	2020-02-17 03:55:42
 49	1	14	1	Ly Put Garage	2020-02-15	1	0	30	45	30	received	inventory_part	2020-02-15 10:28:50	2020-02-15 10:28:50
 336	5	69	1	Ly Put Garage	2020-02-18	2	0	15	25	30	received	inventory_part	2020-02-22 02:01:13	2020-02-22 02:01:13
@@ -8609,6 +8673,10 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 106	2	30	1	Ly Put Garage	2020-02-15	56	54	2.5	5	140	received	inventory_part	2020-02-17 03:55:42	2020-02-17 03:55:42
 52	1	17	1	Ly Put Garage	2020-02-15	4	4	20	35	80	received	inventory_part	2020-02-15 10:28:50	2020-02-15 10:28:50
 209	3	35	1	Ly Put Garage	2020-02-16	6	3	65	85	390	received	inventory_part	2020-02-18 14:44:41	2020-02-18 14:44:41
+43	1	7	1	Ly Put Garage	2020-02-15	8	7	10	18	80	received	inventory_part	2020-02-15 10:28:50	2020-02-15 10:28:50
+342	5	75	1	Ly Put Garage	2020-02-18	6	5	25	35	150	received	inventory_part	2020-02-22 02:01:13	2020-02-22 02:01:13
+343	5	76	1	Ly Put Garage	2020-02-18	5	3	15	35	75	received	inventory_part	2020-02-22 02:01:13	2020-02-22 02:01:13
+344	5	77	1	Ly Put Garage	2020-02-18	5	4	15	35	75	received	inventory_part	2020-02-22 02:01:13	2020-02-22 02:01:13
 53	1	18	1	Ly Put Garage	2020-02-15	8	8	10	15	80	received	inventory_part	2020-02-15 10:28:50	2020-02-15 10:28:50
 54	1	19	1	Ly Put Garage	2020-02-15	4	4	45	65	180	received	inventory_part	2020-02-15 10:28:50	2020-02-15 10:28:50
 55	1	9	1	Ly Put Garage	2020-02-15	1	1	35	50	35	received	inventory_part	2020-02-15 10:28:50	2020-02-15 10:28:50
@@ -8618,7 +8686,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 228	3	54	1	Ly Put Garage	2020-02-16	4	4	15	25	60	received	inventory_part	2020-02-18 14:44:41	2020-02-18 14:44:41
 229	3	55	1	Ly Put Garage	2020-02-16	4	4	30	50	120	received	inventory_part	2020-02-18 14:44:41	2020-02-18 14:44:41
 244	4	58	1	Ly Put Garage	2020-02-16	1	1	50	65	50	received	inventory_part	2020-02-18 14:53:03	2020-02-18 14:53:03
-246	4	60	1	Ly Put Garage	2020-02-16	1	1	70	85	70	received	inventory_part	2020-02-18 14:53:03	2020-02-18 14:53:03
 250	4	64	1	Ly Put Garage	2020-02-16	4	4	12	25	48	received	inventory_part	2020-02-18 14:53:03	2020-02-18 14:53:03
 251	4	65	1	Ly Put Garage	2020-02-16	5	5	12	125	60	received	inventory_part	2020-02-18 14:53:03	2020-02-18 14:53:03
 253	4	67	1	Ly Put Garage	2020-02-16	1	1	12	20	12	received	inventory_part	2020-02-18 14:53:03	2020-02-18 14:53:03
@@ -8651,6 +8718,7 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 221	3	47	1	Ly Put Garage	2020-02-16	5	4	10	15	50	received	inventory_part	2020-02-18 14:44:41	2020-02-18 14:44:41
 1132	27	431	1	Ly Put Garage	2020-03-04	9	7	3.5	6	31.5	received	inventory_part	2020-03-05 03:56:41	2020-03-05 03:56:41
 1133	27	432	1	Ly Put Garage	2020-03-04	10	9	3.5	6	35	received	inventory_part	2020-03-05 03:56:41	2020-03-05 03:56:41
+246	4	60	1	Ly Put Garage	2020-02-16	1	0	70	85	70	received	inventory_part	2020-02-18 14:53:03	2020-02-18 14:53:03
 470	8	128	1	Ly Put Garage	2020-02-21	9	6	16	22	144	received	inventory_part	2020-02-22 09:28:32	2020-02-22 09:28:32
 245	4	59	1	Ly Put Garage	2020-02-16	1	0	50	65	50	received	inventory_part	2020-02-18 14:53:03	2020-02-18 14:53:03
 252	4	66	1	Ly Put Garage	2020-02-16	1	0	12	20	12	received	inventory_part	2020-02-18 14:53:03	2020-02-18 14:53:03
@@ -8686,7 +8754,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 399	7	114	1	Ly Put Garage	2020-02-21	7	6	7	10	49	received	inventory_part	2020-02-22 07:59:19	2020-02-22 07:59:19
 473	8	131	1	Ly Put Garage	2020-02-21	3	2	55	65	165	received	inventory_part	2020-02-22 09:28:33	2020-02-22 09:28:33
 483	8	141	1	Ly Put Garage	2020-02-21	9	8	8	15	72	received	inventory_part	2020-02-22 09:28:33	2020-02-22 09:28:33
-613	12	194	1	Ly Put Garage	2020-02-23	11	8	3	8	33	received	inventory_part	2020-02-23 14:31:34	2020-02-23 14:31:34
 351	6	87	1	Ly Put Garage	2020-02-20	2	2	45	65	90	received	inventory_part	2020-02-22 02:05:11	2020-02-22 02:05:11
 352	6	88	1	Ly Put Garage	2020-02-20	4	4	11	15	44	received	inventory_part	2020-02-22 02:05:11	2020-02-22 02:05:11
 535	10	160	1	Ly Put Garage	2020-02-23	5	3	17	25	85	received	inventory_part	2020-02-23 08:28:28	2020-02-23 08:28:28
@@ -8705,6 +8772,7 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 400	7	115	1	Ly Put Garage	2020-02-21	7	5	3	4	21	received	inventory_part	2020-02-22 07:59:19	2020-02-22 07:59:19
 484	8	142	1	Ly Put Garage	2020-02-21	10	8	5	10	50	received	inventory_part	2020-02-22 09:28:33	2020-02-22 09:28:33
 406	7	121	1	Ly Put Garage	2020-02-21	6	4	8	10	48	received	inventory_part	2020-02-22 07:59:19	2020-02-22 07:59:19
+613	12	194	1	Ly Put Garage	2020-02-23	11	7	3	8	33	received	inventory_part	2020-02-23 14:31:34	2020-02-23 14:31:34
 363	6	99	1	Ly Put Garage	2020-02-20	3	3	12	15	36	received	inventory_part	2020-02-22 02:05:12	2020-02-22 02:05:12
 366	6	102	1	Ly Put Garage	2020-02-20	10	10	15	15	150	received	inventory_part	2020-02-22 02:05:12	2020-02-22 02:05:12
 370	6	106	1	Ly Put Garage	2020-02-20	1	1	4	5	4	received	inventory_part	2020-02-22 02:05:12	2020-02-22 02:05:12
@@ -8869,7 +8937,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 1334	34	533	2	Ly Put Garage	2020-03-13	1	1	10	45	10	received	inventory_part	2020-03-16 13:57:22	2020-03-16 13:57:22
 1335	34	534	2	Ly Put Garage	2020-03-13	1	1	5	15	5	received	inventory_part	2020-03-16 13:57:22	2020-03-16 13:57:22
 1336	34	535	2	Ly Put Garage	2020-03-13	1	1	5	15	5	received	inventory_part	2020-03-16 13:57:22	2020-03-16 13:57:22
-1337	34	536	2	Ly Put Garage	2020-03-13	2	2	5	8	10	received	inventory_part	2020-03-16 13:57:22	2020-03-16 13:57:22
 910	21	351	1	Ly Put Garage	2020-02-27	1	1	12	20	12	received	inventory_part	2020-02-27 14:30:58	2020-02-27 14:30:58
 912	21	353	1	Ly Put Garage	2020-02-27	3	3	55	95	165	received	inventory_part	2020-02-27 14:30:58	2020-02-27 14:30:58
 1240	31	495	1	Ly Put Garage	2020-03-05	12	0	5	10	60	received	inventory_part	2020-03-05 14:26:45	2020-03-05 14:26:45
@@ -8897,6 +8964,7 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 1326	34	525	2	Ly Put Garage	2020-03-13	2	1	2	8	4	received	inventory_part	2020-03-16 13:57:22	2020-03-16 13:57:22
 909	21	350	1	Ly Put Garage	2020-02-27	8	6	9	12	72	received	inventory_part	2020-02-27 14:30:58	2020-02-27 14:30:58
 1239	31	494	1	Ly Put Garage	2020-03-05	4	2	5	15	20	received	inventory_part	2020-03-05 14:26:45	2020-03-05 14:26:45
+1337	34	536	2	Ly Put Garage	2020-03-13	2	0	5	8	10	received	inventory_part	2020-03-16 13:57:22	2020-03-16 13:57:22
 1173	28	457	1	Ly Put Garage	2020-03-05	12	12	1	3	12	received	inventory_part	2020-03-05 04:03:22	2020-03-05 04:03:22
 1174	28	458	1	Ly Put Garage	2020-03-05	7	7	2	4	14	received	inventory_part	2020-03-05 04:03:22	2020-03-05 04:03:22
 1176	28	460	1	Ly Put Garage	2020-03-05	15	15	2	4	30	received	inventory_part	2020-03-05 04:03:22	2020-03-05 04:03:22
@@ -8923,7 +8991,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 833	17	290	1	Ly Put Garage	2020-02-26	2	2	45	65	90	received	inventory_part	2020-02-26 14:42:49	2020-02-26 14:42:49
 911	21	352	1	Ly Put Garage	2020-02-27	2	0	55	65	110	received	inventory_part	2020-02-27 14:30:58	2020-02-27 14:30:58
 831	17	288	1	Ly Put Garage	2020-02-26	2	1	50	70	100	received	inventory_part	2020-02-26 14:42:49	2020-02-26 14:42:49
-915	21	356	1	Ly Put Garage	2020-02-27	67	66	5	10	335	received	inventory_part	2020-02-27 14:30:58	2020-02-27 14:30:58
 1175	28	459	1	Ly Put Garage	2020-03-05	11	9	2	4	22	received	inventory_part	2020-03-05 04:03:22	2020-03-05 04:03:22
 834	17	291	1	Ly Put Garage	2020-02-26	1	1	45	65	45	received	inventory_part	2020-02-26 14:42:49	2020-02-26 14:42:49
 835	17	292	1	Ly Put Garage	2020-02-26	1	1	30	50	30	received	inventory_part	2020-02-26 14:42:49	2020-02-26 14:42:49
@@ -8945,6 +9012,7 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 1177	28	461	1	Ly Put Garage	2020-03-05	8	7	1.5	3	12	received	inventory_part	2020-03-05 04:03:22	2020-03-05 04:03:22
 830	17	287	1	Ly Put Garage	2020-02-26	2	0	40	65	80	received	inventory_part	2020-02-26 14:42:49	2020-02-26 14:42:49
 1440	37	572	6	Ly Put Garage	2020-03-21	2	0	65	75	130	received	inventory_part	2020-03-21 11:32:14	2020-03-21 11:32:14
+915	21	356	1	Ly Put Garage	2020-02-27	67	65	5	10	335	received	inventory_part	2020-02-27 14:30:58	2020-02-27 14:30:58
 856	19	315	1	Ly Put Garage	2020-02-26	2	2	40	80	80	received	inventory_part	2020-02-26 14:55:21	2020-02-26 14:55:21
 857	19	316	1	Ly Put Garage	2020-02-26	3	3	28	35	84	received	inventory_part	2020-02-26 14:55:21	2020-02-26 14:55:21
 858	19	317	1	Ly Put Garage	2020-02-26	5	5	3	7	15	received	inventory_part	2020-02-26 14:55:21	2020-02-26 14:55:21
@@ -8978,7 +9046,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 990	22	366	1	Ly Put Garage	2020-02-28	3	3	300	380	900	received	inventory_part	2020-03-03 03:47:48	2020-03-03 03:47:48
 992	22	368	1	Ly Put Garage	2020-02-28	11	11	85	130	935	received	inventory_part	2020-03-03 03:47:48	2020-03-03 03:47:48
 995	22	371	1	Ly Put Garage	2020-02-28	1	1	80	130	80	received	inventory_part	2020-03-03 03:47:48	2020-03-03 03:47:48
-996	22	372	1	Ly Put Garage	2020-02-28	10	10	80	120	800	received	inventory_part	2020-03-03 03:47:48	2020-03-03 03:47:48
 997	22	373	1	Ly Put Garage	2020-02-28	0	0	45	85	0	received	inventory_part	2020-03-03 03:47:48	2020-03-03 03:47:48
 998	22	374	1	Ly Put Garage	2020-02-28	56	56	20	45	1120	received	inventory_part	2020-03-03 03:47:48	2020-03-03 03:47:48
 999	23	375	1	Ly Put Garage	2020-03-01	0	0	55	75	0	received	inventory_part	2020-03-03 03:54:11	2020-03-03 03:54:11
@@ -8993,6 +9060,7 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 840	18	299	1	Ly Put Garage	2020-02-26	2	0	23	40	46	received	inventory_part	2020-02-26 14:50:14	2020-02-26 14:50:14
 994	22	370	1	Ly Put Garage	2020-02-28	5	4	75	120	375	received	inventory_part	2020-03-03 03:47:48	2020-03-03 03:47:48
 1461	41	581	11	Ly Put Garage	2020-04-02	2	1	95	135	190	received	inventory_part	2020-04-02 03:58:35	2020-04-02 03:58:35
+996	22	372	1	Ly Put Garage	2020-02-28	10	9	80	120	800	received	inventory_part	2020-03-03 03:47:48	2020-03-03 03:47:48
 1015	24	392	1	Ly Put Garage	2020-03-01	2	2	40	50	80	received	inventory_part	2020-03-03 03:59:53	2020-03-03 03:59:53
 1016	24	393	1	Ly Put Garage	2020-03-01	2	2	20	25	40	received	inventory_part	2020-03-03 03:59:53	2020-03-03 03:59:53
 1018	24	395	1	Ly Put Garage	2020-03-01	2	2	20	35	40	received	inventory_part	2020-03-03 03:59:53	2020-03-03 03:59:53
@@ -9091,11 +9159,8 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 1204	29	469	1	Ly Put Garage	2020-03-05	19	17	3	4	57	received	inventory_part	2020-03-05 04:27:50	2020-03-05 04:27:50
 1274	32	509	2	Ly Put Garage	2020-03-08	1	1	10	40	10	received	inventory_part	2020-03-08 14:42:50	2020-03-08 14:42:50
 1275	32	510	2	Ly Put Garage	2020-03-08	1	1	10	40	10	received	inventory_part	2020-03-08 14:42:50	2020-03-08 14:42:50
-1276	32	511	2	Ly Put Garage	2020-03-08	1	1	5	15	5	received	inventory_part	2020-03-08 14:42:50	2020-03-08 14:42:50
-1277	32	512	2	Ly Put Garage	2020-03-08	1	1	5	15	5	received	inventory_part	2020-03-08 14:42:50	2020-03-08 14:42:50
 1278	32	513	2	Ly Put Garage	2020-03-08	1	1	5	15	5	received	inventory_part	2020-03-08 14:42:50	2020-03-08 14:42:50
 1279	32	514	2	Ly Put Garage	2020-03-08	1	1	5	15	5	received	inventory_part	2020-03-08 14:42:50	2020-03-08 14:42:50
-1282	32	517	2	Ly Put Garage	2020-03-08	1	1	20	35	20	received	inventory_part	2020-03-08 14:42:50	2020-03-08 14:42:50
 1120	26	419	1	Ly Put Garage	2020-03-04	1	1	20	25	20	received	inventory_part	2020-03-05 03:28:53	2020-03-05 03:28:53
 1121	26	420	1	Ly Put Garage	2020-03-04	1	1	20	25	20	received	inventory_part	2020-03-05 03:28:53	2020-03-05 03:28:53
 1123	26	422	1	Ly Put Garage	2020-03-04	2	2	25	35	50	received	inventory_part	2020-03-05 03:28:53	2020-03-05 03:28:53
@@ -9137,6 +9202,9 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 1129	26	428	1	Ly Put Garage	2020-03-04	11	10	7	10	77	received	inventory_part	2020-03-05 03:28:53	2020-03-05 03:28:53
 1130	26	429	1	Ly Put Garage	2020-03-04	4	3	7	10	28	received	inventory_part	2020-03-05 03:28:53	2020-03-05 03:28:53
 1131	26	430	1	Ly Put Garage	2020-03-04	6	4	7	10	42	received	inventory_part	2020-03-05 03:28:53	2020-03-05 03:28:53
+1277	32	512	2	Ly Put Garage	2020-03-08	1	0	5	15	5	received	inventory_part	2020-03-08 14:42:50	2020-03-08 14:42:50
+1276	32	511	2	Ly Put Garage	2020-03-08	1	0	5	15	5	received	inventory_part	2020-03-08 14:42:50	2020-03-08 14:42:50
+1282	32	517	2	Ly Put Garage	2020-03-08	1	0	20	35	20	received	inventory_part	2020-03-08 14:42:50	2020-03-08 14:42:50
 1366	36	556	6	Ly Put Garage	2020-03-21	1	1	8	15	8	pending	inventory_part	2020-03-21 10:28:33	2020-03-21 10:28:33
 1367	36	557	6	Ly Put Garage	2020-03-21	1	1	8	13	8	pending	inventory_part	2020-03-21 10:28:33	2020-03-21 10:28:33
 1368	36	558	6	Ly Put Garage	2020-03-21	1	1	8	10	8	pending	inventory_part	2020-03-21 10:28:33	2020-03-21 10:28:33
@@ -9346,7 +9414,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 2222	79	861	20	Ly Put Garage	2020-05-07	1	1	45	65	45	received	inventory_part	2020-05-07 03:32:44	2020-05-07 03:32:44
 2352	82	925	15	Ly Put Garage	2020-05-11	3	3	5	15	15	received	inventory_part	2020-05-11 13:51:49	2020-05-11 13:51:49
 1970	69	750	1	Ly Put Garage	2020-05-02	3	3	33	55	99	received	inventory_part	2020-05-02 07:52:06	2020-05-02 07:52:06
-1972	69	752	1	Ly Put Garage	2020-05-02	9	9	10	18	90	received	inventory_part	2020-05-02 07:52:06	2020-05-02 07:52:06
 1975	69	755	1	Ly Put Garage	2020-05-02	1	0	10	35	10	received	inventory_part	2020-05-02 07:52:06	2020-05-02 07:52:06
 2221	79	860	20	Ly Put Garage	2020-05-07	7	6	45	65	315	received	inventory_part	2020-05-07 03:32:44	2020-05-07 03:32:44
 2245	80	862	1	Ly Put Garage	2020-05-08	15	15	10	30	150	received	inventory_part	2020-05-08 03:44:09	2020-05-08 03:44:09
@@ -9372,6 +9439,7 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 1915	62	724	1	Ly Put Garage	2020-04-27	1	1	60	85	60	received	inventory_part	2020-04-27 13:10:46	2020-04-27 13:10:46
 1733	56	703	13	Ly Put Garage	2020-04-17	5	4	5	10	25	received	inventory_part	2020-04-17 05:54:41	2020-04-17 05:54:41
 1976	69	756	1	Ly Put Garage	2020-05-02	6	5	12	25	72	received	inventory_part	2020-05-02 07:52:06	2020-05-02 07:52:06
+1972	69	752	1	Ly Put Garage	2020-05-02	9	8	10	18	90	received	inventory_part	2020-05-02 07:52:06	2020-05-02 07:52:06
 1735	57	705	16	Ly Put Garage	2020-04-22	10	8	12	18	120	received	inventory_part	2020-04-22 02:50:41	2020-04-22 02:50:41
 1737	58	61	17	Ly Put Garage	2020-04-22	2	0	70	85	140	received	inventory_part	2020-04-22 03:42:43	2020-04-22 03:42:43
 1724	55	694	1	Ly Put Garage	2020-04-17	7	4	5	10	35	received	inventory_part	2020-04-17 04:53:08	2020-04-17 04:53:08
@@ -9388,7 +9456,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 2251	80	868	1	Ly Put Garage	2020-05-08	4	4	25	35	100	received	inventory_part	2020-05-08 03:44:09	2020-05-08 03:44:09
 2252	80	869	1	Ly Put Garage	2020-05-08	7	7	10	20	70	received	inventory_part	2020-05-08 03:44:09	2020-05-08 03:44:09
 2253	80	870	1	Ly Put Garage	2020-05-08	4	4	10	20	40	received	inventory_part	2020-05-08 03:44:09	2020-05-08 03:44:09
-2255	80	872	1	Ly Put Garage	2020-05-08	2	2	30	45	60	received	inventory_part	2020-05-08 03:44:09	2020-05-08 03:44:09
 2256	80	873	1	Ly Put Garage	2020-05-08	3	3	30	45	90	received	inventory_part	2020-05-08 03:44:09	2020-05-08 03:44:09
 2257	80	874	1	Ly Put Garage	2020-05-08	2	2	10	20	20	received	inventory_part	2020-05-08 03:44:09	2020-05-08 03:44:09
 2258	80	875	1	Ly Put Garage	2020-05-08	3	3	10	20	30	received	inventory_part	2020-05-08 03:44:09	2020-05-08 03:44:09
@@ -9417,6 +9484,7 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 2082	71	778	1	Ly Put Garage	2020-05-02	5	5	8	15	40	received	inventory_part	2020-05-04 03:16:41	2020-05-04 03:16:41
 2083	71	779	1	Ly Put Garage	2020-05-02	1	1	23	40	23	received	inventory_part	2020-05-04 03:16:41	2020-05-04 03:16:41
 2072	71	781	1	Ly Put Garage	2020-05-02	12	11	5	10	60	received	inventory_part	2020-05-04 03:16:41	2020-05-04 03:16:41
+2255	80	872	1	Ly Put Garage	2020-05-08	2	1	30	45	60	received	inventory_part	2020-05-08 03:44:09	2020-05-08 03:44:09
 1937	66	737	7	Ly Put Garage	2020-04-30	9	5	14	20	126	received	inventory_part	2020-04-30 03:28:16	2020-04-30 03:28:16
 1971	69	751	1	Ly Put Garage	2020-05-02	6	2	15	35	90	received	inventory_part	2020-05-02 07:52:06	2020-05-02 07:52:06
 2254	80	871	1	Ly Put Garage	2020-05-08	15	14	5	10	75	received	inventory_part	2020-05-08 03:44:09	2020-05-08 03:44:09
@@ -9609,6 +9677,7 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 2588	102	1015	2	Ly Put Garage	2020-06-04	14	13	19	30	266	received	inventory_part	2020-06-04 02:48:14	2020-06-04 02:48:14
 2549	93	988	25	Ly Put Garage	2020-05-18	12	7	12	18	144	received	inventory_part	2020-05-18 09:10:51	2020-05-18 09:10:51
 2567	97	1004	1	Ly Put Garage	2020-05-27	26	22	1	3	26	received	inventory_part	2020-05-27 04:03:25	2020-05-27 04:03:25
+2627	108	1035	1	Ly Put Garage	2020-06-07	10	6	1.5	2.5	15	received	inventory_part	2020-06-07 04:31:45	2020-06-07 04:31:45
 223	3	49	1	Ly Put Garage	2020-02-16	20	14	8	10	160	received	inventory_part	2020-02-18 14:44:41	2020-02-18 14:44:41
 1901	62	710	1	Ly Put Garage	2020-04-27	19	0	3	5	57	received	inventory_part	2020-04-27 13:10:46	2020-04-27 13:10:46
 2577	100	1011	29	Ly Put Garage	2020-05-29	6	0	27.6999999999999993	35	166.199999999999989	received	inventory_part	2020-05-31 13:20:15	2020-05-31 13:20:15
@@ -9616,7 +9685,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 532	9	157	1	Ly Put Garage	2020-02-22	11	7	3	4	33	received	inventory_part	2020-02-23 08:20:40	2020-02-23 08:20:40
 104	2	28	1	Ly Put Garage	2020-02-15	27	16	1.5	5	40.5	received	inventory_part	2020-02-17 03:55:42	2020-02-17 03:55:42
 2630	108	1038	1	Ly Put Garage	2020-06-07	8	7	1.5	2.5	12	received	inventory_part	2020-06-07 04:31:45	2020-06-07 04:31:45
-2627	108	1035	1	Ly Put Garage	2020-06-07	10	7	1.5	2.5	15	received	inventory_part	2020-06-07 04:31:45	2020-06-07 04:31:45
 2631	108	1039	1	Ly Put Garage	2020-06-07	1	1	23	40	23	received	inventory_part	2020-06-07 04:31:45	2020-06-07 04:31:45
 2632	108	1040	1	Ly Put Garage	2020-06-07	1	1	23	40	23	received	inventory_part	2020-06-07 04:31:45	2020-06-07 04:31:45
 2633	108	1041	1	Ly Put Garage	2020-06-07	1	1	23	40	23	received	inventory_part	2020-06-07 04:31:45	2020-06-07 04:31:45
@@ -9658,13 +9726,13 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 2619	106	294	1	Ly Put Garage	2020-06-04	4	2	21	35	84	received	inventory_part	2020-06-04 13:28:44	2020-06-04 13:28:44
 2586	102	1013	2	Ly Put Garage	2020-06-04	50	46	25	35	1250	received	inventory_part	2020-06-04 02:48:14	2020-06-04 02:48:14
 2678	116	1070	1	Ly Put Garage	2020-06-09	4	3	5	10	20	received	inventory_part	2020-06-09 14:43:46	2020-06-09 14:43:46
-2628	108	1036	1	Ly Put Garage	2020-06-07	18	15	1.5	2.5	27	received	inventory_part	2020-06-07 04:31:45	2020-06-07 04:31:45
+2629	108	1037	1	Ly Put Garage	2020-06-07	10	7	1.5	2.5	15	received	inventory_part	2020-06-07 04:31:45	2020-06-07 04:31:45
 2663	111	1056	1	Ly Put Garage	2020-06-08	30	28	2.5	10	75	received	inventory_part	2020-06-08 14:03:09	2020-06-08 14:03:09
 2580	101	1012	30	Ly Put Garage	2020-06-03	75	42	1.5	2.5	112.5	received	inventory_part	2020-06-03 10:17:20	2020-06-03 10:17:20
-1238	31	493	1	Ly Put Garage	2020-03-05	62	43	3	5	186	received	inventory_part	2020-03-05 14:26:45	2020-03-05 14:26:45
+2628	108	1036	1	Ly Put Garage	2020-06-07	18	14	1.5	2.5	27	received	inventory_part	2020-06-07 04:31:45	2020-06-07 04:31:45
 2625	108	1033	1	Ly Put Garage	2020-06-07	10	7	1.5	2.5	15	received	inventory_part	2020-06-07 04:31:45	2020-06-07 04:31:45
 2578	99	1010	28	Ly Put Garage	2020-05-29	33	8	20	30	660	received	inventory_part	2020-05-31 13:20:51	2020-05-31 13:20:51
-2629	108	1037	1	Ly Put Garage	2020-06-07	10	8	1.5	2.5	15	received	inventory_part	2020-06-07 04:31:45	2020-06-07 04:31:45
+1238	31	493	1	Ly Put Garage	2020-03-05	62	42	3	5	186	received	inventory_part	2020-03-05 14:26:45	2020-03-05 14:26:45
 2690	117	563	10	Ly Put Garage	2020-06-10	9	9	9	15	81	received	inventory_part	2020-06-10 01:19:34	2020-06-10 01:19:34
 2691	118	1080	11	Ly Put Garage	2020-06-12	11	11	3.5	8	38.5	received	inventory_part	2020-06-12 15:30:10	2020-06-12 15:30:10
 2693	118	1082	11	Ly Put Garage	2020-06-12	20	20	9.5	12	190	received	inventory_part	2020-06-12 15:30:10	2020-06-12 15:30:10
@@ -9677,9 +9745,7 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 2709	120	1086	1	Ly Put Garage	2020-06-15	12	12	5	10	60	received	inventory_part	2020-06-15 13:13:32	2020-06-15 13:13:32
 2657	111	1050	1	Ly Put Garage	2020-06-08	9	7	10	13	90	received	inventory_part	2020-06-08 14:03:09	2020-06-08 14:03:09
 2694	118	191	11	Ly Put Garage	2020-06-12	11	9	13	23	143	received	inventory_part	2020-06-12 15:30:10	2020-06-12 15:30:10
-2675	116	1067	1	Ly Put Garage	2020-06-09	9	8	2.5	8	22.5	received	inventory_part	2020-06-09 14:43:46	2020-06-09 14:43:46
 2639	109	190	1	Ly Put Garage	2020-06-07	10	7	8	13	80	received	inventory_part	2020-06-07 05:04:01	2020-06-07 05:04:01
-2712	120	1089	1	Ly Put Garage	2020-06-15	23	23	1.5	2.5	34.5	received	inventory_part	2020-06-15 13:13:32	2020-06-15 13:13:32
 2713	120	1090	1	Ly Put Garage	2020-06-15	15	15	1.5	2.5	22.5	received	inventory_part	2020-06-15 13:13:32	2020-06-15 13:13:32
 2716	120	1093	1	Ly Put Garage	2020-06-15	4	4	1.5	3	6	received	inventory_part	2020-06-15 13:13:32	2020-06-15 13:13:32
 2717	120	1094	1	Ly Put Garage	2020-06-15	5	5	1.5	3	7.5	received	inventory_part	2020-06-15 13:13:32	2020-06-15 13:13:32
@@ -9704,15 +9770,17 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 2672	115	1064	1	Ly Put Garage	2020-06-09	27	1	2.5	5	67.5	received	inventory_part	2020-06-09 07:11:37	2020-06-09 07:11:37
 2659	111	1052	1	Ly Put Garage	2020-06-08	7	4	9	13	63	received	inventory_part	2020-06-08 14:03:09	2020-06-08 14:03:09
 2746	122	1109	1	Ly Put Garage	2020-06-18	17	16	3	5	51	received	inventory_part	2020-06-18 07:15:00	2020-06-18 07:15:00
+2712	120	1089	1	Ly Put Garage	2020-06-15	23	22	1.5	2.5	34.5	received	inventory_part	2020-06-15 13:13:32	2020-06-15 13:13:32
 2669	113	1061	7	Ly Put Garage	2020-06-09	46	10	0.299999999999999989	0.5	13.8000000000000007	received	inventory_part	2020-06-09 00:37:55	2020-06-09 00:37:55
 2656	111	1049	1	Ly Put Garage	2020-06-08	9	5	7	15	63	received	inventory_part	2020-06-08 14:03:09	2020-06-08 14:03:09
 2676	116	1068	1	Ly Put Garage	2020-06-09	5	0	2	2.5	10	received	inventory_part	2020-06-09 14:43:46	2020-06-09 14:43:46
 2671	114	1063	7	Ly Put Garage	2020-06-09	9	3	3	5	27	received	inventory_part	2020-06-09 06:07:57	2020-06-09 06:07:57
-2710	120	1087	1	Ly Put Garage	2020-06-15	29	28	1.5	2.5	43.5	received	inventory_part	2020-06-15 13:13:32	2020-06-15 13:13:32
 2718	120	1095	1	Ly Put Garage	2020-06-15	8	5	1.5	2.5	12	received	inventory_part	2020-06-15 13:13:32	2020-06-15 13:13:32
 2692	118	1081	11	Ly Put Garage	2020-06-12	30	18	9	12	270	received	inventory_part	2020-06-12 15:30:10	2020-06-12 15:30:10
 2707	120	1084	1	Ly Put Garage	2020-06-15	9	6	8	12	72	received	inventory_part	2020-06-15 13:13:32	2020-06-15 13:13:32
 2695	118	180	11	Ly Put Garage	2020-06-12	22	15	2.5	5	55	received	inventory_part	2020-06-12 15:30:10	2020-06-12 15:30:10
+2675	116	1067	1	Ly Put Garage	2020-06-09	9	7	2.5	8	22.5	received	inventory_part	2020-06-09 14:43:46	2020-06-09 14:43:46
+2710	120	1087	1	Ly Put Garage	2020-06-15	29	27	1.5	2.5	43.5	received	inventory_part	2020-06-15 13:13:32	2020-06-15 13:13:32
 2764	126	1110	18	Ly Put Garage	2020-06-18	1	1	600	1100	600	received	inventory_part	2020-06-18 14:04:36	2020-06-18 14:04:36
 2765	126	1111	18	Ly Put Garage	2020-06-18	1	1	10	60	10	received	inventory_part	2020-06-18 14:04:36	2020-06-18 14:04:36
 2766	126	1112	18	Ly Put Garage	2020-06-18	4	4	5	90	20	received	inventory_part	2020-06-18 14:04:36	2020-06-18 14:04:36
@@ -9885,7 +9953,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 2996	162	1239	1	Ly Put Garage	2020-07-15	1	1	20	55	20	received	inventory_part	2020-07-15 05:24:37	2020-07-15 05:24:37
 3007	165	1242	1	Ly Put Garage	2020-07-20	2	2	10	20	20	received	inventory_part	2020-07-20 09:11:52	2020-07-20 09:11:52
 3008	165	1243	1	Ly Put Garage	2020-07-20	3	3	5	25	15	received	inventory_part	2020-07-20 09:11:52	2020-07-20 09:11:52
-3009	165	1244	1	Ly Put Garage	2020-07-20	4	4	10	15	40	received	inventory_part	2020-07-20 09:11:52	2020-07-20 09:11:52
 3011	165	1246	1	Ly Put Garage	2020-07-20	3	3	10	15	30	received	inventory_part	2020-07-20 09:11:52	2020-07-20 09:11:52
 3012	165	1247	1	Ly Put Garage	2020-07-20	23	23	0.5	2	11.5	received	inventory_part	2020-07-20 09:11:52	2020-07-20 09:11:52
 3013	165	1248	1	Ly Put Garage	2020-07-20	24	24	0.5	2	12	received	inventory_part	2020-07-20 09:11:52	2020-07-20 09:11:52
@@ -9904,8 +9971,8 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 3025	165	409	1	Ly Put Garage	2020-07-20	36	35	3	6	108	received	inventory_part	2020-07-20 09:11:52	2020-07-20 09:11:52
 2947	155	1195	1	Ly Put Garage	2020-07-09	19	14	1	2	19	received	inventory_part	2020-07-09 05:10:34	2020-07-09 05:10:34
 2977	162	1220	1	Ly Put Garage	2020-07-15	9	8	5	20	45	received	inventory_part	2020-07-15 05:24:37	2020-07-15 05:24:37
+3009	165	1244	1	Ly Put Garage	2020-07-20	4	3	10	15	40	received	inventory_part	2020-07-20 09:11:52	2020-07-20 09:11:52
 2983	162	1226	1	Ly Put Garage	2020-07-15	10	7	15	30	150	received	inventory_part	2020-07-15 05:24:37	2020-07-15 05:24:37
-3026	165	580	1	Ly Put Garage	2020-07-20	3	3	10	15	30	received	inventory_part	2020-07-20 09:11:52	2020-07-20 09:11:52
 3003	163	1240	7	Ly Put Garage	2020-07-19	10	8	11.1099999999999994	12	111.099999999999994	received	inventory_part	2020-07-19 07:47:31	2020-07-19 07:47:31
 3016	165	1251	1	Ly Put Garage	2020-07-20	22	0	0.5	2	11	received	inventory_part	2020-07-20 09:11:52	2020-07-20 09:11:52
 3028	167	1251	1	Ly Put Garage	2020-07-23	22	22	4	7	88	received	inventory_part	2020-07-23 03:11:49	2020-07-23 03:11:49
@@ -9952,6 +10019,7 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 3107	168	1287	23	Ly Put Garage	2020-07-26	1	1	15	35	15	received	inventory_part	2020-07-26 03:38:20	2020-07-26 03:38:20
 3083	168	1260	23	Ly Put Garage	2020-07-26	4	3	20	30	80	received	inventory_part	2020-07-26 03:38:20	2020-07-26 03:38:20
 3006	164	602	28	Ly Put Garage	2020-07-19	288	240	5	8	1440	received	inventory_part	2020-07-19 08:11:53	2020-07-19 08:11:53
+3026	165	580	1	Ly Put Garage	2020-07-20	3	2	10	15	30	received	inventory_part	2020-07-20 09:11:52	2020-07-20 09:11:52
 3005	163	98	7	Ly Put Garage	2020-07-19	7	3	19	25	133	received	inventory_part	2020-07-19 07:47:31	2020-07-19 07:47:31
 3108	168	1288	23	Ly Put Garage	2020-07-26	1	1	15	25	15	received	inventory_part	2020-07-26 03:38:20	2020-07-26 03:38:20
 3109	168	1262	23	Ly Put Garage	2020-07-26	1	1	40	60	40	received	inventory_part	2020-07-26 03:38:20	2020-07-26 03:38:20
@@ -10149,7 +10217,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 3379	208	56	7	Ly Put Garage	2020-08-31	1	0	8	26	8	received	inventory_part	2020-08-31 06:35:37	2020-08-31 06:35:37
 3380	208	1395	7	Ly Put Garage	2020-08-31	5	0	8	26	40	received	inventory_part	2020-08-31 06:35:37	2020-08-31 06:35:37
 2711	120	1088	1	Ly Put Garage	2020-06-15	42	38	1.5	2.5	63	received	inventory_part	2020-06-15 13:13:32	2020-06-15 13:13:32
-3385	211	603	46	Ly Put Garage	2020-09-04	10	10	2.5	7	25	received	inventory_part	2020-09-04 03:23:27	2020-09-04 03:23:27
 3386	211	618	46	Ly Put Garage	2020-09-04	20	20	1.30000000000000004	3	26	received	inventory_part	2020-09-04 03:23:27	2020-09-04 03:23:27
 3387	212	386	19	Ly Put Garage	2020-09-04	2	2	45	65	90	received	inventory_part	2020-09-04 03:39:44	2020-09-04 03:39:44
 3389	212	848	19	Ly Put Garage	2020-09-04	7	7	7.5	13	52.5	received	inventory_part	2020-09-04 03:39:44	2020-09-04 03:39:44
@@ -10175,24 +10242,25 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 3382	209	1394	26	Ly Put Garage	2020-08-31	20	19	2.5	7	50	received	inventory_part	2020-08-31 06:37:46	2020-08-31 06:37:46
 3397	214	1403	1	Ly Put Garage	2020-09-04	54	53	10	20	540	received	inventory_part	2020-09-04 08:12:01	2020-09-04 08:12:01
 2500	87	383	24	Ly Put Garage	2020-05-16	47	27	3	5	141	received	inventory_part	2020-05-16 03:24:46	2020-05-16 03:24:46
-1006	23	382	1	Ly Put Garage	2020-03-01	30	13	2.5	5	75	received	inventory_part	2020-03-03 03:54:12	2020-03-03 03:54:12
+3133	169	193	24	Ly Put Garage	2020-07-26	20	16	4.5	7	90	received	inventory_part	2020-07-26 05:16:59	2020-07-26 05:16:59
 652	14	234	1	Ly Put Garage	2020-02-24	3	2	12	25	36	received	inventory_part	2020-02-24 03:33:47	2020-02-24 03:33:47
 3405	217	1408	6	Ly Put Garage	2020-09-09	5	5	14.5	20	72.5	received	inventory_part	2020-09-09 04:12:57	2020-09-09 04:12:57
 3027	166	82	1	Ly Put Garage	2020-07-22	2	1	10	45	20	received	inventory_part	2020-07-22 08:41:58	2020-07-22 08:41:58
 1520	48	609	1	Ly Put Garage	2020-04-11	11	1	22.5	35	247.5	received	inventory_part	2020-04-11 13:36:38	2020-04-11 13:36:38
+3385	211	603	46	Ly Put Garage	2020-09-04	10	8	2.5	7	25	received	inventory_part	2020-09-04 03:23:27	2020-09-04 03:23:27
 2486	85	969	23	Ly Put Garage	2020-05-15	5	3	5	10	25	received	inventory_part	2020-05-15 03:48:48	2020-05-15 03:48:48
 99	2	23	1	Ly Put Garage	2020-02-15	1	0	15	25	15	received	inventory_part	2020-02-17 03:55:42	2020-02-17 03:55:42
 2832	144	1138	6	Ly Put Garage	2020-06-27	30	27	2	3	60	received	inventory_part	2020-06-27 07:54:40	2020-06-27 07:54:40
 3400	214	1406	1	Ly Put Garage	2020-09-04	41	40	1.5	2	61.5	received	inventory_part	2020-09-04 08:12:01	2020-09-04 08:12:01
-3133	169	193	24	Ly Put Garage	2020-07-26	20	17	4.5	7	90	received	inventory_part	2020-07-26 05:16:59	2020-07-26 05:16:59
 3404	216	796	1	Ly Put Garage	2020-09-07	2	0	25	45	50	received	inventory_part	2020-09-07 12:53:11	2020-09-07 12:53:11
 2076	71	785	1	Ly Put Garage	2020-05-02	13	4	5	10	65	received	inventory_part	2020-05-04 03:16:41	2020-05-04 03:16:41
 3388	212	853	19	Ly Put Garage	2020-09-04	2	1	9	16	18	received	inventory_part	2020-09-04 03:39:44	2020-09-04 03:39:44
 3381	208	1393	7	Ly Put Garage	2020-08-31	10	5	8	10	80	received	inventory_part	2020-08-31 06:35:37	2020-08-31 06:35:37
-2965	158	725	13	Ly Put Garage	2020-07-12	48	16	2.33000000000000007	3	111.840000000000003	received	inventory_part	2020-07-12 07:51:07	2020-07-12 07:51:07
+2965	158	725	13	Ly Put Garage	2020-07-12	48	14	2.33000000000000007	3	111.840000000000003	received	inventory_part	2020-07-12 07:51:07	2020-07-12 07:51:07
 3384	210	1397	7	Ly Put Garage	2020-08-31	10	7	0.5	1	5	received	inventory_part	2020-08-31 12:26:17	2020-08-31 12:26:17
 3383	210	1396	7	Ly Put Garage	2020-08-31	10	5	0.5	1	5	received	inventory_part	2020-08-31 12:26:17	2020-08-31 12:26:17
 2674	115	1066	1	Ly Put Garage	2020-06-09	70	33	1.19999999999999996	3	84	received	inventory_part	2020-06-09 07:11:37	2020-06-09 07:11:37
+1006	23	382	1	Ly Put Garage	2020-03-01	30	12	2.5	5	75	received	inventory_part	2020-03-03 03:54:12	2020-03-03 03:54:12
 3406	217	1409	6	Ly Put Garage	2020-09-09	5	5	11.5	17	57.5	received	inventory_part	2020-09-09 04:12:57	2020-09-09 04:12:57
 3409	217	1368	6	Ly Put Garage	2020-09-09	2	2	45	65	90	received	inventory_part	2020-09-09 04:12:57	2020-09-09 04:12:57
 3410	217	553	6	Ly Put Garage	2020-09-09	2	2	38	50	76	received	inventory_part	2020-09-09 04:12:57	2020-09-09 04:12:57
@@ -10225,6 +10293,7 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 3435	223	1431	1	Ly Put Garage	2020-09-19	1	1	1	10	1	received	inventory_part	2020-09-19 04:54:07	2020-09-19 04:54:07
 1442	37	566	6	Ly Put Garage	2020-03-21	20	19	1.19999999999999996	3	24	received	inventory_part	2020-03-21 11:32:14	2020-03-21 11:32:14
 3440	224	1432	7	Ly Put Garage	2020-09-22	4	0	6	8	24	received	inventory_part	2020-09-22 13:04:55	2020-09-22 13:04:55
+2510	92	1	1	Ly Put Garage	2020-05-17	10000	9742	1	1	10000	received	service	2020-05-17 10:10:38	2020-05-17 10:10:38
 2005	70	769	1	Ly Put Garage	2020-05-02	5	4	3	5	15	received	inventory_part	2020-05-02 08:48:23	2020-05-02 08:48:23
 3441	224	1433	7	Ly Put Garage	2020-09-22	11	11	0.5	1	5.5	received	inventory_part	2020-09-22 13:04:55	2020-09-22 13:04:55
 3428	219	1425	1	Ly Put Garage	2020-09-10	1	0	9	13	9	received	inventory_part	2020-09-10 08:14:59	2020-09-10 08:14:59
@@ -10232,7 +10301,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 3439	224	1097	7	Ly Put Garage	2020-09-22	20	17	1.80000000000000004	3	36	received	inventory_part	2020-09-22 13:04:55	2020-09-22 13:04:55
 2782	132	1120	10	Ly Put Garage	2020-06-18	50	14	3.79999999999999982	10	190	received	inventory_part	2020-06-19 07:18:32	2020-06-19 07:18:32
 482	8	140	1	Ly Put Garage	2020-02-21	12	9	5	8	60	received	inventory_part	2020-02-22 09:28:33	2020-02-22 09:28:33
-2510	92	1	1	Ly Put Garage	2020-05-17	10000	9743	1	1	10000	received	service	2020-05-17 10:10:38	2020-05-17 10:10:38
 3432	221	1428	13	Ly Put Garage	2020-09-10	2	1	15	35	30	received	inventory_part	2020-09-11 03:05:01	2020-09-11 03:05:01
 1518	48	607	1	Ly Put Garage	2020-04-11	252	210	3.5	5	882	received	inventory_part	2020-04-11 13:36:38	2020-04-11 13:36:38
 393	7	108	1	Ly Put Garage	2020-02-21	12	5	6	13	72	received	inventory_part	2020-02-22 07:59:19	2020-02-22 07:59:19
@@ -10278,7 +10346,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 3498	235	1456	31	Ly Put Garage	2020-10-05	2	2	65	80	130	received	inventory_part	2020-10-05 11:13:30	2020-10-05 11:13:30
 3501	237	66	2	Ly Put Garage	2020-10-05	5	5	15	25	75	received	inventory_part	2020-10-05 11:29:58	2020-10-05 11:29:58
 3502	237	67	2	Ly Put Garage	2020-10-05	5	5	15	25	75	received	inventory_part	2020-10-05 11:29:58	2020-10-05 11:29:58
-3492	233	1011	27	Ly Put Garage	2020-10-01	4	1	27.6999999999999993	35	110.799999999999997	received	inventory_part	2020-10-01 07:59:01	2020-10-01 07:59:01
 3500	236	1457	7	Ly Put Garage	2020-10-05	4	3	9	11	36	received	inventory_part	2020-10-05 11:19:59	2020-10-05 11:19:59
 3471	227	907	48	Ly Put Garage	2020-09-26	2	1	10	25	20	received	inventory_part	2020-09-26 14:42:59	2020-09-26 14:42:59
 3479	229	507	32	Ly Put Garage	2020-09-27	4	3	18.5	35	74	received	inventory_part	2020-09-27 11:43:29	2020-09-27 11:43:29
@@ -10286,6 +10353,7 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 3470	227	908	48	Ly Put Garage	2020-09-26	2	1	10	15	20	received	inventory_part	2020-09-26 14:42:59	2020-09-26 14:42:59
 3499	236	695	7	Ly Put Garage	2020-10-05	20	19	1.80000000000000004	3	36	received	inventory_part	2020-10-05 11:19:59	2020-10-05 11:19:59
 3476	227	1442	48	Ly Put Garage	2020-09-26	4	2	35	50	140	received	inventory_part	2020-09-26 14:42:59	2020-09-26 14:42:59
+3492	233	1011	27	Ly Put Garage	2020-10-01	4	0	27.6999999999999993	35	110.799999999999997	received	inventory_part	2020-10-01 07:59:01	2020-10-01 07:59:01
 3503	237	502	2	Ly Put Garage	2020-10-05	2	2	25	40	50	received	inventory_part	2020-10-05 11:29:58	2020-10-05 11:29:58
 3504	237	1458	2	Ly Put Garage	2020-10-05	1	1	250	350	250	received	inventory_part	2020-10-05 11:29:58	2020-10-05 11:29:58
 3505	238	609	50	Ly Put Garage	2020-10-05	18	18	25	38	450	received	inventory_part	2020-10-05 11:51:37	2020-10-05 11:51:37
@@ -10297,7 +10365,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 839	18	298	1	Ly Put Garage	2020-02-26	3	1	23	40	69	received	inventory_part	2020-02-26 14:50:14	2020-02-26 14:50:14
 3511	242	1462	6	Ly Put Garage	2020-10-13	2	2	50	60	100	received	inventory_part	2020-10-13 14:40:27	2020-10-13 14:40:27
 3512	242	113	6	Ly Put Garage	2020-10-13	7	7	3.5	10	24.5	received	inventory_part	2020-10-13 14:40:27	2020-10-13 14:40:27
-3513	242	796	6	Ly Put Garage	2020-10-13	5	5	8	15	40	received	inventory_part	2020-10-13 14:40:27	2020-10-13 14:40:27
 3514	242	103	6	Ly Put Garage	2020-10-13	10	10	9	10	90	received	inventory_part	2020-10-13 14:40:27	2020-10-13 14:40:27
 3515	242	104	6	Ly Put Garage	2020-10-13	10	10	4.5	13	45	received	inventory_part	2020-10-13 14:40:27	2020-10-13 14:40:27
 3516	242	105	6	Ly Put Garage	2020-10-13	10	10	7	15	70	received	inventory_part	2020-10-13 14:40:27	2020-10-13 14:40:27
@@ -10327,13 +10394,14 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 3520	242	1463	6	Ly Put Garage	2020-10-13	5	4	4.5	10	22.5	received	inventory_part	2020-10-13 14:40:27	2020-10-13 14:40:27
 3509	240	1461	7	Ly Put Garage	2020-10-08	10	9	2	3	20	received	inventory_part	2020-10-08 12:20:23	2020-10-08 12:20:23
 3524	242	1467	6	Ly Put Garage	2020-10-13	2	0	45	55	90	received	inventory_part	2020-10-13 14:40:27	2020-10-13 14:40:27
-3528	243	1470	29	Ly Put Garage	2020-10-14	24	23	6.5	13	156	received	inventory_part	2020-10-14 11:24:54	2020-10-14 11:24:54
+3513	242	796	6	Ly Put Garage	2020-10-13	5	4	8	15	40	received	inventory_part	2020-10-13 14:40:27	2020-10-13 14:40:27
 3537	248	1476	10	Ly Put Garage	2020-10-20	24	23	4.09999999999999964	8	98.4000000000000057	received	inventory_part	2020-10-20 13:19:46	2020-10-20 13:19:46
 3532	246	1471	51	Ly Put Garage	2020-10-19	15	14	15	25	225	received	inventory_part	2020-10-19 11:03:47	2020-10-19 11:03:47
 3531	245	1468	6	Ly Put Garage	2020-10-25	5	4	22	35	110	received	inventory_part	2020-10-16 09:22:44	2020-10-16 09:22:44
 3533	247	1472	52	Ly Put Garage	2020-10-20	1	0	65	75	65	received	inventory_part	2020-10-20 13:11:31	2020-10-20 13:11:31
 3535	247	1474	52	Ly Put Garage	2020-10-20	1	0	180	210	180	received	inventory_part	2020-10-20 13:11:31	2020-10-20 13:11:31
 3517	242	132	6	Ly Put Garage	2020-10-13	9	7	12	15	108	received	inventory_part	2020-10-13 14:40:27	2020-10-13 14:40:27
+3528	243	1470	29	Ly Put Garage	2020-10-14	24	22	6.5	13	156	received	inventory_part	2020-10-14 11:24:54	2020-10-14 11:24:54
 3548	249	1487	53	Ly Put Garage	2020-10-20	2	2	50	65	100	received	inventory_part	2020-10-20 13:34:16	2020-10-20 13:34:16
 3550	249	1489	53	Ly Put Garage	2020-10-20	1	1	120	150	120	received	inventory_part	2020-10-20 13:34:16	2020-10-20 13:34:16
 3551	249	1490	53	Ly Put Garage	2020-10-20	5	5	20	35	100	received	inventory_part	2020-10-20 13:34:16	2020-10-20 13:34:16
@@ -10343,7 +10411,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 3555	250	1494	11	Ly Put Garage	2020-10-21	5	5	20	25	100	received	inventory_part	2020-10-21 12:06:54	2020-10-21 12:06:54
 3557	250	1496	11	Ly Put Garage	2020-10-21	12	12	6.25	12	75	received	inventory_part	2020-10-21 12:06:54	2020-10-21 12:06:54
 3558	250	1497	11	Ly Put Garage	2020-10-21	3	3	26	35	78	received	inventory_part	2020-10-21 12:06:54	2020-10-21 12:06:54
-3559	251	1083	32	Ly Put Garage	2020-10-23	8	8	20	30	160	received	inventory_part	2020-10-23 13:24:28	2020-10-23 13:24:28
 3560	252	421	54	Ly Put Garage	2020-10-26	1	1	18	40	18	received	inventory_part	2020-10-26 11:56:56	2020-10-26 11:56:56
 3561	252	422	54	Ly Put Garage	2020-10-26	3	3	18	30	54	received	inventory_part	2020-10-26 11:56:56	2020-10-26 11:56:56
 3562	252	1498	54	Ly Put Garage	2020-10-26	5	5	20	40	100	received	inventory_part	2020-10-26 11:56:56	2020-10-26 11:56:56
@@ -10382,6 +10449,7 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 3594	262	1518	56	Ly Put Garage	2020-11-01	2	2	30	50	60	received	inventory_part	2020-11-01 10:55:18	2020-11-01 10:55:18
 3595	262	1519	56	Ly Put Garage	2020-11-01	5	5	35	50	175	received	inventory_part	2020-11-01 10:55:18	2020-11-01 10:55:18
 3596	262	1520	56	Ly Put Garage	2020-11-01	5	5	15	25	75	received	inventory_part	2020-11-01 10:55:18	2020-11-01 10:55:18
+3559	251	1083	32	Ly Put Garage	2020-10-23	8	7	20	30	160	received	inventory_part	2020-10-23 13:24:28	2020-10-23 13:24:28
 3603	263	1078	57	Ly Put Garage	2020-11-01	4	4	10	25	40	received	inventory_part	2020-11-01 11:18:35	2020-11-01 11:18:35
 3604	263	1521	57	Ly Put Garage	2020-11-01	2	2	20	35	40	received	inventory_part	2020-11-01 11:18:35	2020-11-01 11:18:35
 3605	263	1522	57	Ly Put Garage	2020-11-01	2	2	10	20	20	received	inventory_part	2020-11-01 11:18:35	2020-11-01 11:18:35
@@ -10399,7 +10467,6 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 3618	265	1527	2	Ly Put Garage	2020-11-01	2	2	15	35	30	received	inventory_part	2020-11-01 11:31:39	2020-11-01 11:31:39
 3619	265	1149	2	Ly Put Garage	2020-11-01	10	10	12	25	120	received	inventory_part	2020-11-01 11:31:39	2020-11-01 11:31:39
 3620	265	1528	2	Ly Put Garage	2020-11-01	5	5	10	25	50	received	inventory_part	2020-11-01 11:31:39	2020-11-01 11:31:39
-3621	266	1531	27	Ly Put Garage	2020-11-01	13	13	26	35	338	received	inventory_part	2020-11-01 11:54:40	2020-11-01 11:54:40
 1917	63	727	7	Ly Put Garage	2020-04-28	9	2	4.5	8	40.5	received	inventory_part	2020-04-28 12:13:17	2020-04-28 12:13:17
 3622	267	1532	6	Ly Put Garage	2020-11-03	2	2	75	90	150	received	inventory_part	2020-11-03 12:57:26	2020-11-03 12:57:26
 3623	267	1533	6	Ly Put Garage	2020-11-03	2	2	35	45	70	received	inventory_part	2020-11-03 12:57:26	2020-11-03 12:57:26
@@ -10411,6 +10478,7 @@ COPY public.purchase_details (id, purchase_id, product_id, supplier_id, location
 3629	268	204	6	Ly Put Garage	2020-11-03	1	1	25	35	25	received	inventory_part	2020-11-03 13:06:37	2020-11-03 13:06:37
 3630	269	1535	31	Ly Put Garage	2020-11-04	5	5	40	55	200	received	inventory_part	2020-11-04 12:18:55	2020-11-04 12:18:55
 3614	264	182	6	Ly Put Garage	2020-11-01	5	4	9	15	45	received	inventory_part	2020-11-01 11:28:02	2020-11-01 11:28:02
+3621	266	1531	27	Ly Put Garage	2020-11-01	13	11	26	35	338	received	inventory_part	2020-11-01 11:54:40	2020-11-01 11:54:40
 \.
 
 
@@ -10837,7 +10905,7 @@ SELECT pg_catalog.setval('public.employees_id_seq', 6, true);
 -- Name: expense_details_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.expense_details_id_seq', 2593, true);
+SELECT pg_catalog.setval('public.expense_details_id_seq', 2597, true);
 
 
 --
@@ -10851,7 +10919,7 @@ SELECT pg_catalog.setval('public.expense_types_id_seq', 6, true);
 -- Name: expenses_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.expenses_id_seq', 353, true);
+SELECT pg_catalog.setval('public.expenses_id_seq', 357, true);
 
 
 --
@@ -10865,7 +10933,7 @@ SELECT pg_catalog.setval('public.failed_jobs_id_seq', 1, false);
 -- Name: income_details_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.income_details_id_seq', 1385, true);
+SELECT pg_catalog.setval('public.income_details_id_seq', 1396, true);
 
 
 --
@@ -10879,7 +10947,7 @@ SELECT pg_catalog.setval('public.income_types_id_seq', 12, true);
 -- Name: incomes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.incomes_id_seq', 442, true);
+SELECT pg_catalog.setval('public.incomes_id_seq', 447, true);
 
 
 --
@@ -10893,14 +10961,14 @@ SELECT pg_catalog.setval('public.investments_id_seq', 1, true);
 -- Name: invoice_details_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.invoice_details_id_seq', 2857, true);
+SELECT pg_catalog.setval('public.invoice_details_id_seq', 2898, true);
 
 
 --
 -- Name: invoices_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.invoices_id_seq', 542, true);
+SELECT pg_catalog.setval('public.invoices_id_seq', 548, true);
 
 
 --
